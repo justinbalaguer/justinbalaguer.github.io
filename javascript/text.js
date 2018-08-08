@@ -66,7 +66,10 @@ var phrases = [
 'Hi! I\'m Justin,',
 'just a regular dude',
 'who turns coffee',
-'into a messy code.'];
+'into a messy code.',
+'By the way',
+'This website',
+'is under construction.'];
 
 
 var el = document.querySelector('.desc');
