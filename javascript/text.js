@@ -63,13 +63,10 @@ TextScramble = function () {
 // ——————————————————————————————————————————————————
 
 var phrases = [
-'Hi! I\'m Justin,',
-'just a regular dude',
-'who turns coffee',
-'into a messy code.',
-'By the way',
-'This website',
-'is under construction.'];
+'This website,',
+'is under construction.',
+'And will be back shortly.',
+'Thank You.'];
 
 
 var el = document.querySelector('.desc');
