@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+body {
+    font-size: 100%;
+}
+
+.container {
+    padding: 2em;
+    
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5em;
+        text-align: left;
+        color: rgb(20, 20, 20);
+        border-bottom: 3px solid rgb(80, 80, 80);
+        width: 500px;
+        max-width: 500px;
+    }
+
+        /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 600px) {
+        h1 {
+        font-size: 3.2em;
+        width: 100%;
+        max-width: 100%;
+        }
+    }
+
+
+    span {
+        text-align: left;
+        font-size: 1.2em;
+        color: rgb(80, 80, 80);
+    }
+}

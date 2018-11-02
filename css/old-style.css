@@ -1,0 +1,225 @@
+/* Main */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+  
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  /* Script */
+  
+  #particles-js{
+    min-width: 100%;
+    min-height: 100%;
+    background: #111111;
+  }
+  
+  /* Profile Photo */
+  
+  .avatar {
+    position: relative;
+    border-radius: 50%;
+    width: 130px;
+    height: auto;
+    display: block;
+    margin-top: -150%;
+    margin-left:-50%;
+    transition: transform .2s;
+  }
+  
+  .avatar:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1) rotate(-10deg); 
+  }
+  
+  .holder {
+    position: absolute;
+    max-width: 45%;
+    max-height: 45%;
+    top: 50%;
+    left: 50%;
+    overflow: visible;
+  }
+  
+  /* Name */
+  
+  .name {
+    position: absolute;
+    left: 0;
+    top: 42%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #f7f7f7;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    opacity: 0.9;
+  }
+  
+  /* Description */
+  
+  .desc {
+    position: absolute;
+    left: 0;
+    top: 51%;
+    width: 100%;
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.9;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .dud {
+    color: #f7f7f7;
+  }
+  
+  /* Social Media */
+  
+  .socialmedia {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    overflow: visible;
+    margin: 0 auto;
+  }
+  
+  .socialmediaicons {
+    opacity: 0.9;
+    -webkit-animation: bummer 1s;
+    animation: bummer 1s;
+    -webkit-transform: scale(0,0); 
+    transform: scale(0,0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  @-webkit-keyframes bummer {
+    100% {
+        -webkit-transform: scale(1,1); 
+    }
+  }
+  
+  @keyframes bummer {
+    100% {
+        transform: scale(1,1); 
+    }
+  }
+  
+  ul {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-left: -70%;
+  }
+  
+  li {
+    float: left;
+    margin-left: 20px; 
+    transition: transform .2s;
+  }
+  
+  li, a {
+    display: block;
+    opacity: 0.8;
+  }
+  
+  a:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  li:hover {
+    -ms-transform: scale(1.1) rotate(-45deg); /* IE 9 */
+    -webkit-transform: scale(1.1) rotate(-45deg); /* Safari 3-8 */
+    transform: scale(1.1) rotate(-45deg); 
+    opacity: 1;
+  }
+  
+  
+  /* BUTTON */
+  
+  .buttonholder {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .btn {
+    top: 67%;
+    position: absolute;
+    height: auto;
+    display: block;
+    background: transparent;
+    color: #f7f7f7;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    max-width: 160px;
+    text-decoration: none;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn-1 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .btn-1:hover {
+    border: 0.1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+  }
+  
+  .portfoliolink {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+  
+  .portfoliolink:link {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+  
+  .portfoliolink:visited {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+  
+  
+  /** END OF WELCOME PAGE STYLE **/
