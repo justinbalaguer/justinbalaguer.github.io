@@ -29,7 +29,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .container h1 {
-    font-size: 3.2em;
+    font-size: 3.1em;
     width: 100%;
     max-width: 100%;
   }
@@ -52,6 +52,22 @@ svg {
       justify-self: center;
   left: 700px;
   top: 80px;
+}
+
+/* If the screen size is 1000px wide or less, set the logo down the span */
+@media screen and (max-width: 1200px) {
+  svg {
+    z-index: -1;
+    position: relative;
+    width: 250px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    left: 50px;
+    top: -20px;
+  }
 }
 
 #mainText {
