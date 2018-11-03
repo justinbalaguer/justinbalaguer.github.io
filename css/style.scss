@@ -7,6 +7,9 @@ body, html {
 
 body {
     font-size: 100%;
+    width: 100%;
+    display: gird;
+    grid-template-columns: auto;
 }
 
 .container {
@@ -37,5 +40,30 @@ body {
         text-align: left;
         font-size: 1.2em;
         color: rgb(80, 80, 80);
+    }
+}
+
+svg {
+    z-index: -1;
+    position: absolute;
+    width: 500px;
+    align-self: center;
+    justify-self: center;
+    left: 700px;
+    top: 80px;
+}
+
+#mainText {
+    animation-duration: 1.2s;
+    animation-name: animateSVG;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateSVG {
+    from {
+        transform: translateX(0) translateY(0);
+    } to {
+        transform: translateX(0) translateY(20px);
     }
 }

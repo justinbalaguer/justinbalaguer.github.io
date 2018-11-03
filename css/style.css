@@ -6,6 +6,10 @@ body, html {
 
 body {
   font-size: 100%;
+  width: 100%;
+  display: gird;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 .container {
@@ -35,5 +39,51 @@ body {
   text-align: left;
   font-size: 1.2em;
   color: #505050;
+}
+
+svg {
+  z-index: -1;
+  position: absolute;
+  width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  left: 700px;
+  top: 80px;
+}
+
+#mainText {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-name: animateSVG;
+          animation-name: animateSVG;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes animateSVG {
+  from {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  to {
+    -webkit-transform: translateX(0) translateY(20px);
+            transform: translateX(0) translateY(20px);
+  }
+}
+
+@keyframes animateSVG {
+  from {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  to {
+    -webkit-transform: translateX(0) translateY(20px);
+            transform: translateX(0) translateY(20px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
