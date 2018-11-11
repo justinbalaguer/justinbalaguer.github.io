@@ -1,105 +1,188 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 body, html {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
 }
 
-body {
-  font-size: 100%;
+#bgLogoContainer {
   width: 100%;
-  display: gird;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-}
-
-.container {
-  padding: 2em;
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-}
-
-.container h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
-  text-align: left;
-  color: #141414;
-  border-bottom: 3px solid #505050;
-  width: 500px;
-  max-width: 500px;
-}
-
-@media screen and (max-width: 600px) {
-  .container h1 {
-    font-size: 3.1em;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.container span {
-  text-align: left;
-  font-size: 1.2em;
-  color: #505050;
-}
-
-svg {
-  z-index: -1;
   position: absolute;
-  width: 500px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  left: 700px;
-  top: 80px;
 }
 
-/* If the screen size is 1000px wide or less, set the logo down the span */
-@media screen and (max-width: 1200px) {
-  svg {
-    z-index: -1;
-    position: relative;
-    width: 250px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    left: 50px;
-    top: -20px;
-  }
+#bgLogoContainer .bgLogo {
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
 }
 
-#mainText {
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-name: animateSVG;
-          animation-name: animateSVG;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+#navBar {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
 }
 
-@-webkit-keyframes animateSVG {
-  from {
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  to {
-    -webkit-transform: translateX(0) translateY(20px);
-            transform: translateX(0) translateY(20px);
-  }
+#navBar .logo {
+  width: 100%;
 }
 
-@keyframes animateSVG {
-  from {
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  to {
-    -webkit-transform: translateX(0) translateY(20px);
-            transform: translateX(0) translateY(20px);
-  }
+#navBar .logo h2 {
+  margin: 0 auto;
+  padding: 0.5em;
+  margin-left: 15px;
+}
+
+#navBar .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navBar #navContainer {
+  margin-left: 70%;
+}
+
+#navBar #navContainer ul {
+  margin-top: -30px;
+  padding: 0px;
+  list-style: none;
+}
+
+#navBar #navContainer .navList {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  display: inline-block;
+  padding: 0px 15px;
+  color: #fff;
+}
+
+#navBar #navContainer a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#navBar #navContainer a:hover {
+  color: #E14B5A;
+}
+
+#navBar #navContainer .navLink {
+  position: relative;
+  display: inline-block;
+}
+
+#navBar #navContainer .navLink:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+#navBar #navContainer .navLink:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+}
+
+#navBar #navContainer .navLink:focus {
+  border-bottom: 3px solid #3A1363;
+  color: #E14B5A;
+}
+
+#frontTextHolder {
+  position: absolute;
+  top: 35%;
+}
+
+#frontTextHolder .frontText {
+  margin-left: 20%;
+}
+
+#frontTextHolder h1 {
+  font-weight: bold;
+  color: #272727;
+}
+
+#frontTextHolder p {
+  width: 90%;
+  color: #474747;
+}
+
+#frontTextHolder .frontTextButton {
+  margin-left: 145px;
+  margin-top: 30px;
+}
+
+#frontTextHolder .frontTextButton .button {
+  background-color: #3A1363;
+  /* Green */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#frontTextHolder .frontTextButton .button1 {
+  background-color: #E14B5A;
+  color: white;
+  border: 2px solid #E14B5A;
+}
+
+#frontTextHolder .frontTextButton .button1:hover {
+  background-color: white;
+  color: #E14B5A;
+}
+
+#frontTextHolder #iconContainer {
+  position: absolute;
+  left: 20%;
+}
+
+#frontTextHolder #iconContainer #linkedInContainer {
+  margin-top: 25px;
+}
+
+#frontTextHolder #iconContainer #linkedInContainer .linkedIn:hover path {
+  fill: #E14B5A;
+}
+
+#frontTextHolder #iconContainer #githubContainer {
+  margin-top: -30px;
+  margin-left: 50px;
+}
+
+#frontTextHolder #iconContainer #githubContainer .github:hover path {
+  fill: #E14B5A;
+}
+
+#charContainer {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+}
+
+#charContainer .charHolder {
+  margin-left: 40%;
+}
+
+#charContainer #charAnimation {
+  width: 100%;
+  height: 500px;
 }
 /*# sourceMappingURL=style.css.map */
