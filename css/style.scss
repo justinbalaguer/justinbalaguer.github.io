@@ -1,204 +1,117 @@
-// Import Montserrat font
+/* Import FONT*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+$bg: #03030D;
+$fontMain: #EFEFEF;
+$fontFaded: #747474;
 
-
-$bgcolor:rgb(63,94,251);
-$bggradient: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-$textColor: #474747;
-$titleColor: #272727;
-$violet: #3A1363;
-$red: #E14B5A;
-
-body, html {
-    font-family: 'Montserrat', sans-serif;
+body {
     margin: 0 auto;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-
-//Background Logo for '//justinbalaguer' #VIOLET
-#bgLogoContainer {
-    width: 100%;
-    position: absolute;
-
-    .bgLogo {
-        margin: 0 auto;
-        width: 300px;
-        height: auto;
-    }
-}
-
-//navigation [logo and navbar] #//JUSTINBALAGUER
-#navBar {
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-
-    .logo {
-        width: 100%;
-
-        h2 {
-            margin: 0 auto;
-            padding: 0.5em;
-            margin-left: 15px;
-        }
-
+/*
+NAVIGATION
+*/
+#navbar {
+    z-index: 4;
+    display: grid;
+    min-height: 80px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $bg;
+    #logo {
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        font-size: 18px;
         a {
+            color: $fontMain;
             text-decoration: none;
-            color: #fff;
         }
     }
-
-//navbar [home, skills, about, contact] #NAVBAR
-#navContainer {
-    margin-left: 70%;
-    
-
-    ul {
-        margin-top: -30px; 
-        padding: 0px;
-        list-style: none;
-      }
-      
-      .navList {
-          position: relative;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 1em;
-          display: inline-block;
-          padding: 0px 15px;
-          color: #fff;
-        }
-      
-      a {
-          text-decoration: none;
-          color: $titleColor;
-
-          &:hover {
-            color: $red;
-          }
-      }
-      
-      .navLink {
-          position: relative;
-          display: inline-block;
-      
-          
-        &:after {
-          content: '';
-          position: absolute;
-          width: 0; 
-          height: 3px;
-          display: block;
-          right: 0;
-          background: $bgcolor;
-          background: $bggradient;
-          transition: width .2s ease;
-          -webkit-transition: width .2s ease;
-        }
-      
-          &:hover:after {
-          width: 100%;
-          left: 0;
-          background: $bgcolor;
-          background: $bggradient;
-        }
-      
-          &:focus {
-              border-bottom: 3px solid $violet;
-              color: $red;
-          }
-        }
-}
-}
-
-//front Text #HI
-#frontTextHolder {
-    position: absolute;
-    top: 35%;
-
-    .frontText {
-        margin-left: 20%;
-    }
-
-    h1 {
-        font-weight: bold;
-        color: $titleColor;
-    }
-
-    p {
-        width: 90%;
-        color: $textColor;
-    }
-
-    .frontTextButton {
-        margin-left: 145px;
-        margin-top: 30px;
-
-        .button {
-            background-color: $violet; /* Green */
-            border: none;
-            border-radius: 50px;
-            color: white;
-            padding: 14px 30px;
-            text-align: center;
+    #nav {
+        display: grid;
+        justify-content: end;
+        align-content: center;
+        grid-auto-flow: column;
+        grid-gap: 30px;
+        font-size: 14px;
+        a {
+            color: $fontMain;
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-
-        .button1 {
-            background-color: $red; 
-            color: white; 
-            border: 2px solid $red;
-        }
-
-        .button1:hover {
-            background-color: white;
-            color: $red;
         }
     }
-
-    #iconContainer {
-        position: absolute;
-        left: 20%;
-
-        #linkedInContainer {
-            margin-top: 25px;
-    
-            .linkedIn:hover path {
-                fill: $red;
+}
+/*
+01 CONTENT
+*/
+.mainContent {
+    display: grid;
+    min-height: 768px;
+    background-color: $bg;
+    grid-auto-flow: column;
+    grid-template-columns: 10% 40% 50%;
+    .socialLinks {
+        z-index: 3;
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        grid-auto-flow: row;
+        grid-gap: 15px;
+        padding-left: 40px;
+        a:hover {
+            -webkit-transition: .2s; /* Safari */
+            transition: .2s;
+            -ms-transform: rotate(20deg); /* IE 9 */
+            -webkit-transform: rotate(20deg); /* Safari 3-8 */
+            transform: rotate(20deg);
+        }
+        .lineVertical {
+            padding-left: 10px;
+        }
+        p {
+            display: grid;
+            justify-content: start;
+            align-content: center;
+            grid-auto-flow: row;
+            padding-left: 7px;
+            color: $fontFaded;
+            font-size: 12px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    }
+    .mainLeft {
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        grid-auto-flow: row;
+        grid-gap: 30px;
+        .mainLeftContent {
+            z-index: 2;
+            display: grid;
+            justify-content: start;
+            align-content: center;
+            grid-auto-flow: row;
+            grid-gap: 15px;
+            .welcomeText {
+                font-size: 50px;
+                color: $fontMain;
+            }
+            .welcomeParagraph {
+                font-size: 18px;
+                color: $fontFaded;
             }
         }
-    
-        #githubContainer {
-            margin-top: -30px;
-            margin-left: 50px;
-    
-            .github:hover path {
-                fill: $red;
-            }
-        }  
     }
-}
-    
-    
-
-//character animation #ANIMATION
-#charContainer {
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 10%;
-
-    .charHolder {
-        margin-left: 40%;
-    }
-
-    #charAnimation {
-        width: 100%;
-        height: 500px;
+    .mainRight {
+        z-index: 1;
+        display: grid;
+        justify-content: end;
+        padding-top: 50px;
+        padding-right: 100px;
+        grid-auto-flow: row;
     }
 }

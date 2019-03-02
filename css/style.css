@@ -1,188 +1,163 @@
+/* Import FONT*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-body, html {
-  font-family: 'Montserrat', sans-serif;
+body {
   margin: 0 auto;
   padding: 0;
-}
-
-#bgLogoContainer {
-  width: 100%;
-  position: absolute;
-}
-
-#bgLogoContainer .bgLogo {
-  margin: 0 auto;
-  width: 300px;
-  height: auto;
-}
-
-#navBar {
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-}
-
-#navBar .logo {
-  width: 100%;
-}
-
-#navBar .logo h2 {
-  margin: 0 auto;
-  padding: 0.5em;
-  margin-left: 15px;
-}
-
-#navBar .logo a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#navBar #navContainer {
-  margin-left: 70%;
-}
-
-#navBar #navContainer ul {
-  margin-top: -30px;
-  padding: 0px;
-  list-style: none;
-}
-
-#navBar #navContainer .navList {
-  position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  display: inline-block;
-  padding: 0px 15px;
-  color: #fff;
 }
 
-#navBar #navContainer a {
+/*
+NAVIGATION
+*/
+#navbar {
+  z-index: 4;
+  display: -ms-grid;
+  display: grid;
+  min-height: 80px;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #03030D;
+}
+
+#navbar #logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 18px;
+}
+
+#navbar #logo a {
+  color: #EFEFEF;
   text-decoration: none;
-  color: #272727;
 }
 
-#navBar #navContainer a:hover {
-  color: #E14B5A;
+#navbar #nav {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  font-size: 14px;
 }
 
-#navBar #navContainer .navLink {
-  position: relative;
-  display: inline-block;
-}
-
-#navBar #navContainer .navLink:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  display: block;
-  right: 0;
-  background: #3f5efb;
-  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
-}
-
-#navBar #navContainer .navLink:hover:after {
-  width: 100%;
-  left: 0;
-  background: #3f5efb;
-  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
-}
-
-#navBar #navContainer .navLink:focus {
-  border-bottom: 3px solid #3A1363;
-  color: #E14B5A;
-}
-
-#frontTextHolder {
-  position: absolute;
-  top: 35%;
-}
-
-#frontTextHolder .frontText {
-  margin-left: 20%;
-}
-
-#frontTextHolder h1 {
-  font-weight: bold;
-  color: #272727;
-}
-
-#frontTextHolder p {
-  width: 90%;
-  color: #474747;
-}
-
-#frontTextHolder .frontTextButton {
-  margin-left: 145px;
-  margin-top: 30px;
-}
-
-#frontTextHolder .frontTextButton .button {
-  background-color: #3A1363;
-  /* Green */
-  border: none;
-  border-radius: 50px;
-  color: white;
-  padding: 14px 30px;
-  text-align: center;
+#navbar #nav a {
+  color: #EFEFEF;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
+}
+
+/*
+01 CONTENT
+*/
+.mainContent {
+  display: -ms-grid;
+  display: grid;
+  min-height: 768px;
+  background-color: #03030D;
+  grid-auto-flow: column;
+  -ms-grid-columns: 10% 40% 50%;
+      grid-template-columns: 10% 40% 50%;
+}
+
+.mainContent .socialLinks {
+  z-index: 3;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: row;
+  grid-gap: 15px;
+  padding-left: 40px;
+}
+
+.mainContent .socialLinks a:hover {
+  -webkit-transition: .2s;
   /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
+  transition: .2s;
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Safari 3-8 */
+  transform: rotate(20deg);
 }
 
-#frontTextHolder .frontTextButton .button1 {
-  background-color: #E14B5A;
-  color: white;
-  border: 2px solid #E14B5A;
+.mainContent .socialLinks .lineVertical {
+  padding-left: 10px;
 }
 
-#frontTextHolder .frontTextButton .button1:hover {
-  background-color: white;
-  color: #E14B5A;
+.mainContent .socialLinks p {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: row;
+  padding-left: 7px;
+  color: #747474;
+  font-size: 12px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
-#frontTextHolder #iconContainer {
-  position: absolute;
-  left: 20%;
+.mainContent .mainLeft {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: row;
+  grid-gap: 30px;
 }
 
-#frontTextHolder #iconContainer #linkedInContainer {
-  margin-top: 25px;
+.mainContent .mainLeft .mainLeftContent {
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: row;
+  grid-gap: 15px;
 }
 
-#frontTextHolder #iconContainer #linkedInContainer .linkedIn:hover path {
-  fill: #E14B5A;
+.mainContent .mainLeft .mainLeftContent .welcomeText {
+  font-size: 50px;
+  color: #EFEFEF;
 }
 
-#frontTextHolder #iconContainer #githubContainer {
-  margin-top: -30px;
-  margin-left: 50px;
+.mainContent .mainLeft .mainLeftContent .welcomeParagraph {
+  font-size: 18px;
+  color: #747474;
 }
 
-#frontTextHolder #iconContainer #githubContainer .github:hover path {
-  fill: #E14B5A;
-}
-
-#charContainer {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 10%;
-}
-
-#charContainer .charHolder {
-  margin-left: 40%;
-}
-
-#charContainer #charAnimation {
-  width: 100%;
-  height: 500px;
+.mainContent .mainRight {
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 50px;
+  padding-right: 100px;
+  grid-auto-flow: row;
 }
 /*# sourceMappingURL=style.css.map */
