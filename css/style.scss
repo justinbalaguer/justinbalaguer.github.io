@@ -45,8 +45,11 @@ NAVIGATION
     }
 }
 /*
-01 CONTENT
+01 HOME
 */
+.homeContent {
+    background-color: $bg;
+}
 .mainContent {
     display: grid;
     min-height: 768px;
@@ -60,7 +63,6 @@ NAVIGATION
         align-content: center;
         grid-auto-flow: row;
         grid-gap: 15px;
-        padding-left: 40px;
         a:hover {
             -webkit-transition: .2s; /* Safari */
             transition: .2s;
@@ -111,7 +113,20 @@ NAVIGATION
         display: grid;
         justify-content: end;
         padding-top: 50px;
-        padding-right: 100px;
         grid-auto-flow: row;
+    }
+}
+/*
+02 PROJECTS
+*/
+.projectWrapper {
+    .projectsTitle {
+        width: 100%;
+        text-align: center;
+        p {
+            padding: 20px;
+            font-size: 40px;
+            font-weight: 100;
+        }
     }
 }
