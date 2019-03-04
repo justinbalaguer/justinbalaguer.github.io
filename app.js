@@ -65,29 +65,29 @@ class App extends React.Component {
                         <td className='text-center'>{this.state.Name7}</td>
                         <td>{this.state.Description7}</td>
                         <td className='text-center'>{this.state.Language7}</td>
-                        <td className='text-center'><a href={this.state.Html_Url7}>see project</a></td>
-                        <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">{this.state.Name7}</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url7}>view project</a></td>
+                        <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name1}</td>
                         <td>{this.state.Description1}</td>
                         <td className='text-center'>{this.state.Language1}</td>
-                        <td className='text-center'><a href={this.state.Html_Url1}>see project</a></td>
-                        <td className='text-center'><a href="https://www.dropbox.com/s/ahg2i16i1t46jv0/Ghost%20File%20v1.0%20BETA.exe?dl=0" rel="noopener noreferrer" target="_blank">{this.state.Name1}</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url1}>view project</a></td>
+                        <td className='text-center'><a href="https://www.dropbox.com/s/ahg2i16i1t46jv0/Ghost%20File%20v1.0%20BETA.exe?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name0}</td>
                         <td>{this.state.Description0}</td>
                         <td className='text-center'>{this.state.Language0}</td>
-                        <td className='text-center'><a href={this.state.Html_Url0}>see project</a></td>
-                        <td className='text-center'><a href="https://www.dropbox.com/s/2f2403neqnbjwvy/Evade.apk?dl=0" rel="noopener noreferrer" target="_blank">{this.state.Name0}</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url0}>view project</a></td>
+                        <td className='text-center'><a href="https://www.dropbox.com/s/2f2403neqnbjwvy/Evade.apk?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name2}</td>
                         <td>{this.state.Description2}</td>
                         <td className='text-center'>{this.state.Language2}</td>
-                        <td className='text-center'><a href={this.state.Html_Url2}>see project</a></td>
-                        <td className='text-center'><a href="https://justinbalaguer.github.io/github-repo-fetch" rel="noopener noreferrer" target="_blank">{this.state.Name2}</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url2}>view project</a></td>
+                        <td className='text-center'><a href="https://justinbalaguer.github.io/github-repo-fetch" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     </tbody>
                 </table>

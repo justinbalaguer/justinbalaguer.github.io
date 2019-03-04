@@ -119,14 +119,20 @@ NAVIGATION
 /*
 02 PROJECTS
 */
-.projectWrapper {
-    .projectsTitle {
-        width: 100%;
-        text-align: center;
-        p {
-            padding: 20px;
-            font-size: 40px;
-            font-weight: 100;
+#projects-container {
+    padding-bottom: 80px;
+    .projectWrapper {
+        .projectsTitle {
+            width: 100%;
+            text-align: center;
+            p {
+                padding-top: 40px;
+                font-size: 40px;
+                font-weight: 100;
+            }
+        }
+        #root {
+            padding-top: 10px;
         }
     }
 }

@@ -166,14 +166,22 @@ NAVIGATION
 /*
 02 PROJECTS
 */
-.projectWrapper .projectsTitle {
+#projects-container {
+  padding-bottom: 80px;
+}
+
+#projects-container .projectWrapper .projectsTitle {
   width: 100%;
   text-align: center;
 }
 
-.projectWrapper .projectsTitle p {
-  padding: 20px;
+#projects-container .projectWrapper .projectsTitle p {
+  padding-top: 40px;
   font-size: 40px;
   font-weight: 100;
+}
+
+#projects-container .projectWrapper #root {
+  padding-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
