@@ -223,7 +223,8 @@ NAVIGATION
   padding-bottom: 50px;
 }
 
-#projects-container .ghContribution {
+#projects-container .ghSeperate .ghContribution {
+  z-index: 1;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: start;
@@ -234,7 +235,12 @@ NAVIGATION
   grid-auto-flow: row;
 }
 
-#projects-container .projectIllustration .numberTwoIllustration {
+#projects-container .ghSeperate .ghContribution .calendar {
+  background-color: #fff;
+}
+
+#projects-container .ghSeperate .projectIllustration .numberTwoIllustration {
+  z-index: -1;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: end;
@@ -243,11 +249,11 @@ NAVIGATION
   -ms-flex-line-pack: end;
       align-content: end;
   grid-auto-flow: row;
-  z-index: -1;
   margin-top: -50px;
 }
 
-#projects-container .projectIllustration .verticalLine2 {
+#projects-container .ghSeperate .projectIllustration .verticalLine2 {
+  z-index: -1;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: start;
@@ -256,5 +262,24 @@ NAVIGATION
   -ms-flex-line-pack: end;
       align-content: end;
   grid-auto-flow: row;
+  margin-top: -20px;
+}
+
+/*
+03 ABOUT
+*/
+#about-container {
+  background-color: #03030D;
+  min-height: 500px;
+}
+
+#about-container .about-title {
+  padding: 30px;
+}
+
+#about-container .about-title p {
+  color: #EFEFEF;
+  font-size: 40px;
+  font-weight: 100;
 }
 /*# sourceMappingURL=style.css.map */

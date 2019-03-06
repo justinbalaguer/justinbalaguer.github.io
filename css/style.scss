@@ -169,27 +169,48 @@ NAVIGATION
         grid-template-columns: 70% 30%;
         padding-top: 5px;
         padding-bottom: 50px;
-    }
     .ghContribution {
+        z-index: 1;
         display: grid;
         justify-content: start;
         align-content: center;
         grid-auto-flow: row;
+        .calendar {
+            background-color: #fff;
+        }
     }
     .projectIllustration {
         .numberTwoIllustration {
+            z-index: -1;
             display: grid;
             justify-content: end;
             align-content: end;
             grid-auto-flow: row;
-            z-index: -1;
             margin-top: -50px;
         }
         .verticalLine2 {
+            z-index: -1;
             display: grid;
             justify-content: start;
             align-content: end;
             grid-auto-flow: row;
+            margin-top: -20px;
+        }
+    }
+    }
+}
+/*
+03 ABOUT
+*/
+#about-container {
+    background-color: $bg;
+    min-height: 500px;
+    .about-title {
+        padding: 30px;
+        p {
+            color: $fontMain;
+            font-size: 40px;
+            font-weight: 100;
         }
     }
 }
