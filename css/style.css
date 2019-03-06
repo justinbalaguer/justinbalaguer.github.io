@@ -166,10 +166,6 @@ NAVIGATION
 /*
 02 PROJECTS
 */
-#projects-container {
-  padding-bottom: 80px;
-}
-
 #projects-container .projectWrapper .projectsTitle {
   width: 100%;
   text-align: center;
@@ -182,6 +178,41 @@ NAVIGATION
 }
 
 #projects-container .projectWrapper #root {
+  z-index: 3;
   padding-top: 10px;
+  background-color: #fff;
+}
+
+#projects-container .projectWrapper .projectIllustration {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#projects-container .projectWrapper .projectIllustration .verticalLine2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  grid-auto-flow: row;
+  padding-bottom: 60px;
+}
+
+#projects-container .projectWrapper .projectIllustration .numberTwoIllustration {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  grid-auto-flow: row;
+  z-index: -1;
+  margin-top: -120px;
 }
 /*# sourceMappingURL=style.css.map */

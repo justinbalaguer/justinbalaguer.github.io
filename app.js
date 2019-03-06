@@ -58,35 +58,35 @@ class App extends React.Component {
                         <th className='text-center' scope='col'>Project Name</th>
                         <th className='text-center' scope='col'>Description</th>
                         <th className='text-center' scope='col'>Language</th>
-                        <th className='text-center' scope='col'>Github Link</th>
-                        <th className='text-center' scope='col'>Demo Project</th>
+                        <th className='text-center' scope='col'>Github</th>
+                        <th className='text-center' scope='col'>Demo</th>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name7}</td>
                         <td>{this.state.Description7}</td>
                         <td className='text-center'>{this.state.Language7}</td>
-                        <td className='text-center'><a href={this.state.Html_Url7} rel="noopener noreferrer" target="_blank">view project</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url7} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name1}</td>
                         <td>{this.state.Description1}</td>
                         <td className='text-center'>{this.state.Language1}</td>
-                        <td className='text-center'><a href={this.state.Html_Url1} rel="noopener noreferrer" target="_blank">view project</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url1} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://www.dropbox.com/s/ahg2i16i1t46jv0/Ghost%20File%20v1.0%20BETA.exe?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name0}</td>
                         <td>{this.state.Description0}</td>
                         <td className='text-center'>{this.state.Language0}</td>
-                        <td className='text-center'><a href={this.state.Html_Url0} rel="noopener noreferrer" target="_blank">view project</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url0} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://www.dropbox.com/s/2f2403neqnbjwvy/Evade.apk?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.Name2}</td>
                         <td>{this.state.Description2}</td>
                         <td className='text-center'>{this.state.Language2}</td>
-                        <td className='text-center'><a href={this.state.Html_Url2} rel="noopener noreferrer" target="_blank">view project</a></td>
+                        <td className='text-center'><a href={this.state.Html_Url2} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://justinbalaguer.github.io/github-repo-fetch" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     </tbody>
