@@ -50,13 +50,15 @@ NAVIGATION
 .homeContent {
     background-color: $bg;
 }
+.mainContainer {
 .mainContent {
     display: grid;
-    min-height: 768px;
+    padding-bottom: 10px;
     background-color: $bg;
     grid-auto-flow: column;
     grid-template-columns: 10% 40% 50%;
     .socialLinks {
+        padding-top: 100px;
         z-index: 3;
         display: grid;
         justify-content: start;
@@ -86,6 +88,7 @@ NAVIGATION
         }
     }
     .mainLeft {
+        padding-top: 100px;
         display: grid;
         justify-content: start;
         align-content: center;
@@ -116,6 +119,21 @@ NAVIGATION
         grid-auto-flow: row;
     }
 }
+}
+/* ARROW */
+.arrowDown {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-top: -110px;
+    img {
+        width: 25px;
+    &:hover {
+        cursor: pointer;
+    }
+    }
+}
 /*
 02 PROJECTS
 */
@@ -135,25 +153,43 @@ NAVIGATION
             padding-top: 10px;
             background-color: #fff;
         }
-        .projectIllustration {
+    }
+    .gh-title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        i {
+            font-size: 30px;
+            font-weight: 100;
+        }
+    }
+    .ghSeperate {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 70% 30%;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+    .ghContribution {
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        grid-auto-flow: row;
+    }
+    .projectIllustration {
+        .numberTwoIllustration {
             display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: 50% 50%;
-            .verticalLine2 {
-                display: grid;
-                justify-content: start;
-                align-content: end;
-                grid-auto-flow: row;
-                padding-bottom: 60px;
-            }
-            .numberTwoIllustration {
-                display: grid;
-                justify-content: end;
-                align-content: end;
-                grid-auto-flow: row;
-                z-index: -1;
-                margin-top: -120px;
-            }
+            justify-content: end;
+            align-content: end;
+            grid-auto-flow: row;
+            z-index: -1;
+            margin-top: -50px;
+        }
+        .verticalLine2 {
+            display: grid;
+            justify-content: start;
+            align-content: end;
+            grid-auto-flow: row;
         }
     }
 }

@@ -1,0 +1,1 @@
+new GitHubCalendar(".calendar", "justinbalaguer");

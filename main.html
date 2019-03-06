@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--GITHUB CALENDAR / CONTRIBUTION-->
+    <!--CREDITS: FOUND ON STACKOVERFLOW https://stackoverflow.com/questions/34516592/embed-github-contributions-graph-in-website-->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <!--REACT.JS-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <title>Justin Balaguer | Software Developer</title>
 </head>
 <body>
@@ -22,7 +30,7 @@
     </div>
     <!--01 HOME-->
     <div class="homeContent">
-    <div class="container">
+    <div class="container mainContainer">
     <div class="mainContent">
         <div class="socialLinks">
             <a href="https://github.com/justinbalaguer"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
@@ -53,6 +61,14 @@
     </div>
     </div>
     </div>
+    <!--ARROW-->
+    <div class="container">
+        <div class="arrowDown">
+            <div>
+                <a href="#projects-container"><img src="images/svg/arrowDown.svg"/></a>
+            </div>
+        </div>
+    </div>
     <!--02 PROJECTS-->
     <div class="container" id="projects-container">
         <div class="projectWrapper">
@@ -63,21 +79,27 @@
             <div id="root">
                 <!--REACT DOM HERE-->
             </div>
+        </div>
+        <br/>
+        <hr/>
+        <div class="gh-title">
+            <i>Github Contribution</i>
+        </div>
+        <div class="ghSeperate">
+            <div class="ghContribution">
+                <div class="calendar"></div>
+                <script src="js/gh-contribution.js"></script>
+            </div>
             <div class="projectIllustration">
-                <div class="verticalLine2">
-                    <img src="images/svg/verticalLine2.svg"/>
-                </div>
                 <div class="numberTwoIllustration">
                     <img src="images/svg/02Illustration.svg"/>
+                </div>
+                <div class="verticalLine2">
+                        <img src="images/svg/verticalLine2.svg"/>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--REACT.JS-->
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <!-- Load React component. -->
      <script type="text/babel" src="app.js"></script>
 </body>
