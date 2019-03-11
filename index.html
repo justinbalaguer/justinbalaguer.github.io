@@ -4,11 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--GITHUB CALENDAR / CONTRIBUTION-->
+    <!--CREDITS: FOUND ON STACKOVERFLOW https://stackoverflow.com/questions/34516592/embed-github-contributions-graph-in-website-->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <!--REACT.JS-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <!--SMOOTH SCROLL-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Justin Balaguer | Software Developer</title>
 </head>
 <body>
-    <h1>COMING SOON...</h1>
-    <small>to see the current site being built go to <a href="https://justinbalaguer.github.io/main.html">justinbalaguer.github.io/main.html</a></small>
+    <!--Navigation-->
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html">&lt;justinbalaguer/&gt;</a>
+        </div>
+        <div id="nav">
+            <a href="#home">HOME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#about">ABOUT</a>
+        </div>
+    </div>
+    <!--01 HOME-->
+    <div class="homeContent" id="home">
+    <div class="container mainContainer">
+    <div class="mainContent">
+        <div class="socialLinks">
+            <a href="https://github.com/justinbalaguer" target="_blank"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
+            <a href="https://www.linkedin.com/in/justinbalaguer/" target="_blank"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
+            <a href="https://www.facebook.com/justinbalaguer.i" target="_blank"><img class="facebook" src="images/icons/facebook.svg" alt="facebook logo"/></a>
+            <img class="lineVertical" src="images/svg/verticalLine.svg" alt="Vertical Line"/>
+            <p>Check it out!</p>
+        </div>
+        <div class="mainLeft">
+            <div class="mainLeftContent">
+            <div>
+                <p class="welcomeText">Hi, I'm Justin</p>
+            </div>
+            <div>
+                <p class="welcomeParagraph">Software Developer passionate about learning new technologies and trends.</p>
+            </div>
+            <div>
+                <a href="https://docs.google.com/document/d/1juR1OHDKT_1U8qXRZdbQ57kQi5MzyfuI4_3Qtf_6DoQ/export?format=pdf" target="_blank" class="btn btn-danger"><i class="fa fa-download"></i> Download Resume</a>
+            </div>
+             </div>
+            <div>
+                <img src="images/svg/boxIllustraion.svg" alt="Box Illustration">
+            </div>
+        </div>
+        <div class="mainRight">
+            <img class="illustration" src="images/svg/mainIllustration.svg" alt="Main Illustration">
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--ARROW-->
+    <div class="container">
+        <div class="arrowDown">
+            <div>
+                <a href="#projects"><img src="images/svg/arrowDown.svg"/></a>
+            </div>
+        </div>
+    </div>
+    <!--02 PROJECTS-->
+    <div class="container" id="projects">
+        <div class="projectWrapper">
+            <div class="projectsTitle">
+                <p>PROJECTS</p>
+            </div>
+            <p class="text-center">List of all the projects I made and uploaded to github to be open source</p>
+            <div id="root">
+                <!--REACT DOM HERE-->
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <div class="gh-title">
+            <i>Github Contribution</i>
+        </div>
+        <div class="ghSeperate">
+            <div class="ghContribution">
+                <div class="calendar"></div>
+                <script src="js/gh-contribution.js"></script>
+            </div>
+            <div class="projectIllustration">
+                <div class="numberTwoIllustration">
+                    <img src="images/svg/02Illustration.svg"/>
+                </div>
+                <div class="verticalLine2">
+                        <img src="images/svg/verticalLine2.svg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load React component. -->
+     <script type="text/babel" src="app.js"></script>
+    <!--03 ABOUT-->
+    <div id="about">
+        <div class="container about-title">
+            <p class="text-center">ABOUT</p>
+        </div>
+        <div class="container aboutWrapper">
+            <div class="bgAbout">
+                <!--<img src="images/svg/aboutBackground.svg"/>-->
+            </div>
+            <div class="aboutContent">
+                <div class="aboutLeft">
+                    <div class="aboutTitle">
+                        <p>Justin Balaguer</p>
+                    </div>
+                    <div class="aboutGreet">
+                        <p>Hello, my name is Justin Balaguer. I am a Software Developer.</p>
+                    </div>
+                    <div class="aboutLanguages">
+                        <p>C#</p>
+                        <p>HTML5</p>
+                        <p>CSS3/SCSS</p>
+                        <p>JavaScript</p>
+                        <p>PHP</p>
+                    </div>
+                    <div class="aboutUse">
+                        <p>What I Use:</p>
+                        <a href="https://code.visualstudio.com/download" target="_blank"><img src="./images/icons/vscode.svg" alt="vscodeicon"/></a>
+                        <a href="https://visualstudio.microsoft.com/downloads/" target="_blank"><img src="./images/icons/vs.svg" alt="vsicon"/></a>
+                        <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="./images/icons/xd.svg" alt="xdicon"/></a>
+                        <a href="https://www.adobe.com/sea/products/illustrator.html" target="_blank"><img src="./images/icons/ps.svg" alt="psicon"/></a>
+                    </div>
+                    <div class="myEmail">
+                        <p><a href="mailto:justinanthony.primary@gmail.com">justinanthony.primary@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="aboutRight">
+                    <img src="images/me.png"/>
+                </div>
+            </div>        
+        </div>
+    </div>
 </body>
 </html>
