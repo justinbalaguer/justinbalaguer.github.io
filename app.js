@@ -3,25 +3,30 @@ const API_URL = "https://api.github.com/users/justinbalaguer/repos";
 class App extends React.Component {
     state = {
         //Ph News
-        Name6: undefined,
-        Description6: undefined,
-        Language6: undefined,
-        Html_Url6: undefined,
+        phnewsName: undefined,
+        phnewsDescription: undefined,
+        phnewsLanguage: undefined,
+        phnewsHtml_Url: undefined,
         //Ghost File
-        Name1: undefined,
-        Description1: undefined,
-        Language1: undefined,
-        Html_Url1: undefined,
+        ghostName: undefined,
+        ghostDescription: undefined,
+        ghostLanguage: undefined,
+        ghostHtml_Url: undefined,
         //Unity Game
-        Name0: undefined,
-        Description0: undefined,
-        Language0: undefined,
-        Html_Url0: undefined,
+        evadeName: undefined,
+        evadeDescription: undefined,
+        evadeLanguage: undefined,
+        evadeHtml_Url: undefined,
         //Github Repository Fetch
-        Name2: undefined,
-        Description2: undefined,
-        Language2: undefined,
-        Html_Url2: undefined
+        repoName: undefined,
+        repoDescription: undefined,
+        repoLanguage: undefined,
+        repoHtml_Url: undefined,
+        //Arduino Bluetooth Relay
+        arduinorelayName: undefined,
+        arduinorelayDescription: undefined,
+        arduinorelayLanguage: undefined,
+        arduinorelayHtml_Url: undefined
       }
   async componentDidMount() {
   const api_call = await fetch(`${API_URL}`);
@@ -29,25 +34,30 @@ class App extends React.Component {
   //console.log(data);
   this.setState ({
     //Ph News
-    Name7: data[7].name,
-    Description7: data[7].description,
-    Language7: data[7].language,
-    Html_Url7: data[7].html_url,
+    phnewsName: data[8].name,
+    phnewsDescription: data[8].description,
+    phnewsLanguage: data[8].language,
+    phnewsHtml_Url: data[8].html_url,
     //Ghost File
-    Name1: data[1].name,
-    Description1: data[1].description,
-    Language1: data[1].language,
-    Html_Url1: data[1].html_url,
+    ghostName: data[2].name,
+    ghostDescription: data[2].description,
+    ghostLanguage: data[2].language,
+    ghostHtml_Url: data[2].html_url,
     //Unity Game
-    Name0: data[0].name,
-    Description0: data[0].description,
-    Language0: data[0].language,
-    Html_Url0: data[0].html_url,
+    evadeName: data[1].name,
+    evadeDescription: data[1].description,
+    evadeLanguage: data[1].language,
+    evadeHtml_Url: data[1].html_url,
     //Github Repository Fetch
-    Name2: data[2].name,
-    Description2: data[2].description,
-    Language2: data[2].language,
-    Html_Url2: data[2].html_url
+    repoName: data[3].name,
+    repoDescription: data[3].description,
+    repoLanguage: data[3].language,
+    repoHtml_Url: data[3].html_url,
+    //Arduino Bluetooth Relay
+    arduinorelayName: data[0].name,
+    arduinorelayDescription: data[0].description,
+    arduinorelayLanguage: data[0].language,
+    arduinorelayHtml_Url: data[0].html_url
   })
 }
   render() {
@@ -62,32 +72,39 @@ class App extends React.Component {
                         <th className='text-center' scope='col'>Demo</th>
                     </tr>
                     <tr>
-                        <td className='text-center'>{this.state.Name7}</td>
-                        <td>{this.state.Description7}</td>
-                        <td className='text-center'>{this.state.Language7}</td>
-                        <td className='text-center'><a href={this.state.Html_Url7} rel="noopener noreferrer" target="_blank">view</a></td>
+                        <td className='text-center'>{this.state.phnewsName}</td>
+                        <td>{this.state.phnewsDescription}</td>
+                        <td className='text-center'>{this.state.Language8}</td>
+                        <td className='text-center'><a href={this.state.phnewsHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
-                        <td className='text-center'>{this.state.Name1}</td>
-                        <td>{this.state.Description1}</td>
-                        <td className='text-center'>{this.state.Language1}</td>
-                        <td className='text-center'><a href={this.state.Html_Url1} rel="noopener noreferrer" target="_blank">view</a></td>
+                        <td className='text-center'>{this.state.ghostName}</td>
+                        <td>{this.state.ghostDescription}</td>
+                        <td className='text-center'>{this.state.ghostLanguage}</td>
+                        <td className='text-center'><a href={this.state.ghostHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://www.dropbox.com/s/ahg2i16i1t46jv0/Ghost%20File%20v1.0%20BETA.exe?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
-                        <td className='text-center'>{this.state.Name0}</td>
-                        <td>{this.state.Description0}</td>
-                        <td className='text-center'>{this.state.Language0}</td>
-                        <td className='text-center'><a href={this.state.Html_Url0} rel="noopener noreferrer" target="_blank">view</a></td>
+                        <td className='text-center'>{this.state.evadeName}</td>
+                        <td>{this.state.evadeDescription}</td>
+                        <td className='text-center'>{this.state.evadeLanguage}</td>
+                        <td className='text-center'><a href={this.state.evadeHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://www.dropbox.com/s/2f2403neqnbjwvy/Evade.apk?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     <tr>
-                        <td className='text-center'>{this.state.Name2}</td>
-                        <td>{this.state.Description2}</td>
-                        <td className='text-center'>{this.state.Language2}</td>
-                        <td className='text-center'><a href={this.state.Html_Url2} rel="noopener noreferrer" target="_blank">view</a></td>
+                        <td className='text-center'>{this.state.repoName}</td>
+                        <td>{this.state.repoDescription}</td>
+                        <td className='text-center'>{this.state.repoLanguage}</td>
+                        <td className='text-center'><a href={this.state.repoHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://justinbalaguer.github.io/github-repo-fetch" rel="noopener noreferrer" target="_blank">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <td className='text-center'>{this.state.arduinorelayName}</td>
+                        <td>{this.state.arduinorelayDescription}</td>
+                        <td className='text-center'>{this.state.arduinorelayLanguage}</td>
+                        <td className='text-center'><a href={this.state.arduinorelayHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
+                        <td className='text-center'><a href="https://github.com/justinbalaguer/arduino-bluetooth-relay" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
                     </tbody>
                 </table>

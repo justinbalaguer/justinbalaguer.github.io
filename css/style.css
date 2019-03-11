@@ -172,7 +172,7 @@ NAVIGATION
 
 /* ARROW */
 .arrowDown {
-  z-index: 10;
+  z-index: 3;
   position: absolute;
   left: 50%;
   right: 50%;
