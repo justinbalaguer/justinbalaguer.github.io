@@ -14,6 +14,11 @@
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <!--SMOOTH SCROLL-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Justin Balaguer | Software Developer</title>
 </head>
 <body>
@@ -23,19 +28,19 @@
             <a href="index.html">&lt;justinbalaguer/&gt;</a>
         </div>
         <div id="nav">
-            <a href="#">HOME</a>
+            <a href="#home">HOME</a>
             <a href="#projects">PROJECTS</a>
             <a href="#about">ABOUT</a>
         </div>
     </div>
     <!--01 HOME-->
-    <div class="homeContent">
+    <div class="homeContent" id="home">
     <div class="container mainContainer">
     <div class="mainContent">
         <div class="socialLinks">
-            <a href="https://github.com/justinbalaguer"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
-            <a href="https://www.linkedin.com/in/justinbalaguer/"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
-            <a href="https://www.facebook.com/justinbalaguer.i"><img class="facebook" src="images/icons/facebook.svg" alt="facebook logo"/></a>
+            <a href="https://github.com/justinbalaguer" target="_blank"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
+            <a href="https://www.linkedin.com/in/justinbalaguer/" target="_blank"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
+            <a href="https://www.facebook.com/justinbalaguer.i" target="_blank"><img class="facebook" src="images/icons/facebook.svg" alt="facebook logo"/></a>
             <img class="lineVertical" src="images/svg/verticalLine.svg" alt="Vertical Line"/>
             <p>Check it out!</p>
         </div>
@@ -48,7 +53,7 @@
                 <p class="welcomeParagraph">Software Developer passionate about learning new technologies and trends.</p>
             </div>
             <div>
-                <button class="btn btn-danger">Download Resume</button>
+                <a href="https://docs.google.com/document/d/1juR1OHDKT_1U8qXRZdbQ57kQi5MzyfuI4_3Qtf_6DoQ/export?format=pdf" target="_blank" class="btn btn-danger"><i class="fa fa-download"></i> Download Resume</a>
             </div>
              </div>
             <div>
@@ -128,13 +133,13 @@
                     </div>
                     <div class="aboutUse">
                         <p>What I Use:</p>
-                        <a href="https://code.visualstudio.com/download"><img src="./images/icons/vscode.svg" alt="vscodeicon"/></a>
-                        <a href="https://visualstudio.microsoft.com/downloads/"><img src="./images/icons/vs.svg" alt="vsicon"/></a>
-                        <a href="https://www.adobe.com/products/xd.html"><img src="./images/icons/xd.svg" alt="xdicon"/></a>
-                        <a href="https://www.adobe.com/sea/products/illustrator.html"><img src="./images/icons/ps.svg" alt="psicon"/></a>
+                        <a href="https://code.visualstudio.com/download" target="_blank"><img src="./images/icons/vscode.svg" alt="vscodeicon"/></a>
+                        <a href="https://visualstudio.microsoft.com/downloads/" target="_blank"><img src="./images/icons/vs.svg" alt="vsicon"/></a>
+                        <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="./images/icons/xd.svg" alt="xdicon"/></a>
+                        <a href="https://www.adobe.com/sea/products/illustrator.html" target="_blank"><img src="./images/icons/ps.svg" alt="psicon"/></a>
                     </div>
                     <div class="myEmail">
-                        <p>justinanthony.primary@gmail.com</p>
+                        <p><a href="mailto:justinanthony.primary@gmail.com">justinanthony.primary@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="aboutRight">

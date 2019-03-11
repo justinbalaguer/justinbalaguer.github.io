@@ -22,6 +22,8 @@ NAVIGATION
     padding-left: 40px;
     padding-right: 40px;
     background-color: $bg;
+    width: 100%;
+    position: fixed;
     #logo {
         display: grid;
         justify-content: start;
@@ -50,6 +52,7 @@ NAVIGATION
 */
 .homeContent {
     background-color: $bg;
+    padding-top: 80px;
 }
 .mainContainer {
 .mainContent {

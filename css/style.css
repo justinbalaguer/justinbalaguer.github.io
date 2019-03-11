@@ -19,6 +19,8 @@ NAVIGATION
   padding-left: 40px;
   padding-right: 40px;
   background-color: #03030D;
+  width: 100%;
+  position: fixed;
 }
 
 #navbar #logo {
@@ -60,6 +62,7 @@ NAVIGATION
 */
 .homeContent {
   background-color: #03030D;
+  padding-top: 80px;
 }
 
 .mainContainer .mainContent {
