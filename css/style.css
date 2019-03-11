@@ -147,6 +147,8 @@ NAVIGATION
 .mainContainer .mainContent .mainLeft .mainLeftContent .welcomeText {
   font-size: 50px;
   color: #EFEFEF;
+  font-family: 'Montserrat';
+  font-weight: 900;
 }
 
 .mainContainer .mainContent .mainLeft .mainLeftContent .welcomeParagraph {
@@ -180,40 +182,47 @@ NAVIGATION
 
 .arrowDown img:hover {
   cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  /* Safari */
+  transition: .2s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.2, 1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2, 1.2);
 }
 
 /*
 02 PROJECTS
 */
-#projects-container .projectWrapper .projectsTitle {
+#projects .projectWrapper .projectsTitle {
   width: 100%;
   text-align: center;
 }
 
-#projects-container .projectWrapper .projectsTitle p {
+#projects .projectWrapper .projectsTitle p {
   padding-top: 40px;
   font-size: 40px;
   font-weight: 100;
 }
 
-#projects-container .projectWrapper #root {
+#projects .projectWrapper #root {
   z-index: 3;
   padding-top: 10px;
   background-color: #fff;
 }
 
-#projects-container .gh-title {
+#projects .gh-title {
   width: 100%;
   text-align: center;
   padding: 20px;
 }
 
-#projects-container .gh-title i {
+#projects .gh-title i {
   font-size: 30px;
   font-weight: 100;
 }
 
-#projects-container .ghSeperate {
+#projects .ghSeperate {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -223,7 +232,7 @@ NAVIGATION
   padding-bottom: 50px;
 }
 
-#projects-container .ghSeperate .ghContribution {
+#projects .ghSeperate .ghContribution {
   z-index: 1;
   display: -ms-grid;
   display: grid;
@@ -235,11 +244,11 @@ NAVIGATION
   grid-auto-flow: row;
 }
 
-#projects-container .ghSeperate .ghContribution .calendar {
+#projects .ghSeperate .ghContribution .calendar {
   background-color: #fff;
 }
 
-#projects-container .ghSeperate .projectIllustration .numberTwoIllustration {
+#projects .ghSeperate .projectIllustration .numberTwoIllustration {
   z-index: -1;
   display: -ms-grid;
   display: grid;
@@ -252,7 +261,7 @@ NAVIGATION
   margin-top: -50px;
 }
 
-#projects-container .ghSeperate .projectIllustration .verticalLine2 {
+#projects .ghSeperate .projectIllustration .verticalLine2 {
   z-index: -1;
   display: -ms-grid;
   display: grid;
@@ -268,18 +277,116 @@ NAVIGATION
 /*
 03 ABOUT
 */
-#about-container {
+#about {
   background-color: #03030D;
-  min-height: 500px;
+  min-height: 700px;
+  background: url("../images/svg/aboutBackground.svg") no-repeat;
+  background-color: #03030D;
+  background-position: center;
+  background-position-y: 150px;
 }
 
-#about-container .about-title {
+#about .about-title {
   padding: 30px;
 }
 
-#about-container .about-title p {
+#about .about-title p {
   color: #EFEFEF;
   font-size: 40px;
   font-weight: 100;
+}
+
+#about .bgAbout {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+}
+
+#about .aboutContent {
+  display: -ms-grid;
+  display: grid;
+  min-height: 80px;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+
+#about .aboutContent .aboutLeft {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  grid-auto-flow: row;
+  margin-top: -40px;
+}
+
+#about .aboutContent .aboutLeft .aboutTitle p {
+  font-size: 50px;
+  color: #EFEFEF;
+  font-family: 'Montserrat';
+  font-weight: 900;
+}
+
+#about .aboutContent .aboutLeft .aboutGreet p {
+  width: 57%;
+  font-size: 18px;
+  color: #747474;
+}
+
+#about .aboutContent .aboutLeft .aboutLanguages p {
+  margin: 0 auto;
+  color: #747474;
+}
+
+#about .aboutContent .aboutLeft .aboutUse {
+  padding-top: 30px;
+}
+
+#about .aboutContent .aboutLeft .aboutUse p {
+  color: #c7c7c7;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#about .aboutContent .aboutLeft .aboutUse img {
+  padding: 5px;
+}
+
+#about .aboutContent .aboutLeft .aboutUse img:hover {
+  -webkit-transition: .2s ease-in-out;
+  /* Safari */
+  transition: .2s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1, 1.1);
+}
+
+#about .aboutContent .aboutLeft .myEmail {
+  padding-top: 20px;
+}
+
+#about .aboutContent .aboutLeft .myEmail p {
+  color: #c7c7c7;
+}
+
+#about .aboutContent .aboutRight {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  grid-auto-flow: row;
+  grid-gap: 30px;
+  padding-right: 10px;
+  width: 100%;
+  margin-top: -100px;
+}
+
+#about .aboutContent .aboutRight img {
+  width: 366px;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

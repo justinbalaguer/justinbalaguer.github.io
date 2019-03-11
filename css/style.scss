@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 $bg: #03030D;
 $fontMain: #EFEFEF;
+$fontSecondray: #c7c7c7;
 $fontFaded: #747474;
 
 body {
@@ -104,6 +105,8 @@ NAVIGATION
             .welcomeText {
                 font-size: 50px;
                 color: $fontMain;
+                font-family: 'Montserrat';
+                font-weight: 900;
             }
             .welcomeParagraph {
                 font-size: 18px;
@@ -131,13 +134,18 @@ NAVIGATION
         width: 25px;
     &:hover {
         cursor: pointer;
+        -webkit-transition: .2s ease-in-out; /* Safari */
+        transition: .2s ease-in-out;
+        -ms-transform: scale(1.2,1.2); /* IE 9 */
+        -webkit-transform: scale(1.2,1.2); /* Safari 3-8 */
+        transform: scale(1.2,1.2);
     }
     }
 }
 /*
 02 PROJECTS
 */
-#projects-container {
+#projects {
     .projectWrapper {
         .projectsTitle {
             width: 100%;
@@ -202,15 +210,95 @@ NAVIGATION
 /*
 03 ABOUT
 */
-#about-container {
+#about {
     background-color: $bg;
-    min-height: 500px;
+    min-height: 700px;
+    background: url("../images/svg/aboutBackground.svg") no-repeat;
+    background-color: $bg;
+    background-position: center;
+    background-position-y: 150px;
     .about-title {
         padding: 30px;
         p {
             color: $fontMain;
             font-size: 40px;
             font-weight: 100;
+        }
+    }
+    .bgAbout {
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+    }
+    .aboutContent {
+        display: grid;
+        min-height: 80px;
+        grid-auto-flow: column;
+        grid-gap: 20px;
+        .aboutLeft {
+            display: grid;
+            justify-content: start;
+            align-content: start;
+            grid-auto-flow: row;
+            margin-top: -40px;
+            .aboutTitle {
+                p {
+                    font-size: 50px;
+                    color: $fontMain;
+                    font-family: 'Montserrat';
+                    font-weight: 900;
+                }
+            }
+            .aboutGreet {
+                p {
+                    width: 57%;
+                    font-size: 18px;
+                    color: $fontFaded;
+                }
+            }
+            .aboutLanguages {
+               p {
+                   margin: 0 auto;
+                   color: $fontFaded;
+               }
+            }
+            .aboutUse {
+                padding-top: 30px;
+                p {
+                    color: $fontSecondray;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                img {
+                    padding: 5px;
+                    &:hover {
+                        -webkit-transition: .2s ease-in-out; /* Safari */
+                        transition: .2s ease-in-out;
+                        -ms-transform: scale(1.1,1.1); /* IE 9 */
+                        -webkit-transform: scale(1.1,1.1); /* Safari 3-8 */
+                        transform: scale(1.1,1.1);
+                    }
+                }
+            }
+            .myEmail {
+                padding-top: 20px;
+                p {
+                    color: $fontSecondray;
+                }
+            }
+        }
+        .aboutRight {
+            display: grid;
+            justify-content: end;
+            grid-auto-flow: row;
+            grid-gap: 30px;
+            padding-right: 10px;
+            width: 100%;
+            margin-top: -100px;
+            img {
+                width: 366px;
+                height: auto;
+            }
         }
     }
 }
