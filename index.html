@@ -18,16 +18,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/smoothScroll.js"></script>
     <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Justin Balaguer | Software Developer</title>
 </head>
-<body>
+<body onLoad="loader()">
+    <!--Loader-->
+    <div class="spinner" id="loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+<div id="fullContent">
     <!--Navigation-->
     <div id="navbar">
-        <div id="logo">
+        <div id="logo" class="animate-bottom">
             <a href="index.html">&lt;justinbalaguer/&gt;</a>
         </div>
-        <div id="nav">
+        <div id="nav" class="animate-bottom">
             <a href="#home">HOME</a>
             <a href="#projects">PROJECTS</a>
             <a href="#about">ABOUT</a>
@@ -36,7 +45,7 @@
     <!--01 HOME-->
     <div class="homeContent" id="home">
     <div class="container mainContainer">
-    <div class="mainContent">
+    <div class="mainContent animate-bottom">
         <div class="socialLinks">
             <a href="https://github.com/justinbalaguer" target="_blank"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
             <a href="https://www.linkedin.com/in/justinbalaguer/" target="_blank"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
@@ -44,7 +53,7 @@
             <img class="lineVertical" src="images/svg/verticalLine.svg" alt="Vertical Line"/>
             <p>Check it out!</p>
         </div>
-        <div class="mainLeft">
+        <div class="mainLeft animate-bottom">
             <div class="mainLeftContent">
             <div>
                 <p class="welcomeText">Hi, I'm Justin</p>
@@ -56,11 +65,11 @@
                 <a href="https://docs.google.com/document/d/1juR1OHDKT_1U8qXRZdbQ57kQi5MzyfuI4_3Qtf_6DoQ/export?format=pdf" target="_blank" class="btn btn-danger"><i class="fa fa-download"></i> Download Resume</a>
             </div>
              </div>
-            <div>
+            <div class="animate-bottom">
                 <img src="images/svg/boxIllustraion.svg" alt="Box Illustration">
             </div>
         </div>
-        <div class="mainRight">
+        <div class="mainRight animate-bottom">
             <img class="illustration" src="images/svg/mainIllustration.svg" alt="Main Illustration">
         </div>
     </div>
@@ -69,14 +78,15 @@
     <!--ARROW-->
     <div class="container">
         <div class="arrowDown">
-            <div>
+            <div class="animate-bottom">
                 <a href="#projects"><img src="images/svg/arrowDown.svg"/></a>
             </div>
         </div>
     </div>
     <!--02 PROJECTS-->
+    <div id="fullProject">
     <div class="container" id="projects">
-        <div class="projectWrapper">
+        <div class="projectWrapper animate-bottom">
             <div class="projectsTitle">
                 <p>PROJECTS</p>
             </div>
@@ -104,6 +114,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Load React component. -->
      <script type="text/babel" src="app.js"></script>
@@ -148,5 +159,7 @@
             </div>        
         </div>
     </div>
+</div>
+<script src="./js/loader.js"></script>
 </body>
 </html>

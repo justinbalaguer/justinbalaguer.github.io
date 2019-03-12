@@ -1,9 +1,106 @@
 /* Import FONT*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+/*
+BODY
+*/
+html body {
+  background-color: #03030D;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #03030D;
+}
+
+/*
+LOADER STYLE
+*/
+.spinner {
+  margin: 300px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*
+FULL BODY WRAPPER HERE
+*/
+#fullContent {
+  display: none;
+}
+
+/*
+ANIMATION
+*/
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -20px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -20px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 /*
@@ -13,11 +110,13 @@ NAVIGATION
   z-index: 4;
   display: -ms-grid;
   display: grid;
-  min-height: 80px;
+  min-height: 50px;
   grid-auto-flow: column;
   grid-gap: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #03030D;
   width: 100%;
   position: fixed;
@@ -197,6 +296,11 @@ NAVIGATION
 /*
 02 PROJECTS
 */
+#fullProject {
+  width: 100%;
+  background-color: #fff;
+}
+
 #projects .projectWrapper .projectsTitle {
   width: 100%;
   text-align: center;
@@ -290,7 +394,7 @@ NAVIGATION
 }
 
 #about .about-title {
-  padding: 30px;
+  padding: 40px;
 }
 
 #about .about-title p {

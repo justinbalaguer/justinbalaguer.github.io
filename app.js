@@ -74,7 +74,7 @@ class App extends React.Component {
                     <tr>
                         <td className='text-center'>{this.state.phnewsName}</td>
                         <td>{this.state.phnewsDescription}</td>
-                        <td className='text-center'>{this.state.Language8}</td>
+                        <td className='text-center'>{this.state.phnewsLanguage}</td>
                         <td className='text-center'><a href={this.state.phnewsHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
                         <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">Demo</a></td>
                     </tr>
