@@ -62,6 +62,7 @@ class App extends React.Component {
 }
   render() {
     return (
+        <div class="table-responsive">
         <table className='table table-bordered table-hover table-striped' border='1'>
                 <tbody>
                     <tr>
@@ -108,6 +109,7 @@ class App extends React.Component {
                     </tr>
                     </tbody>
                 </table>
+                </div>
     );
   }
 }

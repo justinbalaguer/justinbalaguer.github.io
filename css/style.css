@@ -1,17 +1,22 @@
 /* Import FONT*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-/*
-BODY
-*/
-html body {
-  background-color: #03030D;
+/* RESET */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
   background-color: #03030D;
+}
+
+/*
+FULL BODY WRAPPER HERE
+*/
+#fullContent {
+  display: none;
 }
 
 /*
@@ -103,57 +108,79 @@ ANIMATION
   }
 }
 
-/*
-NAVIGATION
-*/
-#navbar {
-  z-index: 4;
-  display: -ms-grid;
-  display: grid;
-  min-height: 50px;
-  grid-auto-flow: column;
-  grid-gap: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* NAVIGATION */
+header {
+  background-color: #03030D;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+header .logo {
+  margin: 0;
+  margin-left: 3em;
+  margin-top: .5em;
+}
+
+header .logo a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+header .logo a:hover {
+  color: #ADAFBC;
+}
+
+header .navToggle {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 3em;
+  margin-top: .5em;
+}
+
+header .navToggle a {
+  color: #FFF;
+}
+
+header .navToggle a:hover {
+  color: #ADAFBC;
+}
+
+header .mainNav {
+  display: none;
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  right: 0;
   background-color: #03030D;
   width: 100%;
-  position: fixed;
 }
 
-#navbar #logo {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  font-size: 18px;
+header .mainNav nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-#navbar #logo a {
-  color: #EFEFEF;
-  text-decoration: none;
+header .mainNav nav ul li {
+  margin-right: 3em;
 }
 
-#navbar #nav {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  grid-auto-flow: column;
-  grid-gap: 30px;
+header .mainNav nav ul li a {
   font-size: 14px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-#navbar #nav a {
-  color: #EFEFEF;
-  text-decoration: none;
+header .mainNav nav ul li a:hover {
+  color: #ADAFBC;
 }
 
 /*
@@ -495,5 +522,55 @@ NAVIGATION
 #about .aboutContent .aboutRight img {
   width: 366px;
   height: auto;
+}
+
+/************************************
+*                                   *
+*           MEDIA QUERY             *
+*                                   *
+*************************************/
+@media screen and (min-width: 320px) {
+  header .navToggle {
+    display: block;
+  }
+  header .mainNav {
+    display: none;
+  }
+  header .responsive {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  header .navToggle {
+    display: none;
+  }
+  header .mainNav {
+    display: block;
+    position: static;
+  }
+  header .mainNav nav ul {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-columns: 3fr;
+        grid-template-columns: 3fr;
+    grid-gap: 40px;
+    margin-right: 3em;
+  }
+  header .mainNav nav ul li {
+    margin: 0;
+    margin-top: .5em;
+  }
+  header .responsive {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

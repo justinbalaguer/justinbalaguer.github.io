@@ -5,61 +5,70 @@ $fontMain: #EFEFEF;
 $fontSecondray: #c7c7c7;
 $fontFaded: #747474;
 $red: #DC3545;
-/*
-BODY
-*/  
-html body {
-    background-color: $bg;
+$colorHover: #ADAFBC;
+$colorMainWhite: #FFF;
+
+/* RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
     background-color: $bg;
 }
+
+/*
+FULL BODY WRAPPER HERE
+*/  
+#fullContent {
+    display:none;
+}
+
 /*
 LOADER STYLE
 */
 .spinner {
-  margin: 300px auto 0;
-  width: 70px;
-  text-align: center;
+    margin: 300px auto 0;
+    width: 70px;
+    text-align: center;
 }
 
 .spinner > div {
-  width: 18px;
-  height: 18px;
-  background-color: #fff;
+width: 18px;
+height: 18px;
+background-color: #fff;
 
-  border-radius: 100%;
-  display: inline-block;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+border-radius: 100%;
+display: inline-block;
+-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
 }
 
 .spinner .bounce2 {
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% { -webkit-transform: scale(0) }
-  40% { -webkit-transform: scale(1.0) }
+0%, 80%, 100% { -webkit-transform: scale(0) }
+40% { -webkit-transform: scale(1.0) }
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% { 
+0%, 80%, 100% { 
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 40% { 
+} 40% { 
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
-  }
+}
 }
 /*
 FULL BODY WRAPPER HERE
@@ -70,62 +79,90 @@ FULL BODY WRAPPER HERE
 /*
 ANIMATION
 */ 
-  .animate-bottom {
+.animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
+}
+
+@-webkit-keyframes animatebottom {
     from { bottom:-20px; opacity:0 } 
     to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
+}
+
+@keyframes animatebottom { 
     from{ bottom:-20px; opacity:0 } 
     to{ bottom:0; opacity:1 }
-  }
-/*
-NAVIGATION
-*/
-#navbar {
-    z-index: 4;
-    display: grid;
-    min-height: 50px;
-    grid-auto-flow: column;
-    grid-gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: $bg;
-    width: 100%;
-    position: fixed;
-    #logo {
-        display: grid;
-        justify-content: start;
-        align-content: center;
-        font-size: 18px;
-        a {
-            color: $fontMain;
-            text-decoration: none;
-        }
-    }
-    #nav {
-        display: grid;
-        justify-content: end;
-        align-content: center;
-        grid-auto-flow: column;
-        grid-gap: 30px;
-        font-size: 14px;
-        a {
-            color: $fontMain;
-            text-decoration: none;
-        }
-    }
 }
+
+/* NAVIGATION */
+header {
+    background-color: $bg;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    //logo
+    .logo {
+      margin: 0;
+      margin-left: 3em;
+      margin-top: .5em;
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        color: $colorMainWhite;
+        &:hover {
+          color: $colorHover;
+        }
+      }
+    }
+    //navToggle
+    .navToggle {
+      display: none;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 3em;
+      margin-top: .5em;
+      a {
+        color: $colorMainWhite;
+        &:hover {
+          color: $colorHover;
+        }
+      }
+    }
+    //mainNav
+    .mainNav {
+      display: none;
+      position: absolute;
+      text-align: right;
+      top: 100%;
+      right: 0;
+      background-color: $bg;
+      width: 100%;
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-right: 3em;
+          a {
+            font-size: 14px;
+            color: $colorMainWhite;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              color: $colorHover;
+            }
+          }
+        }
+      }
+    }
+  }
 /*
 01 HOME
 */
@@ -388,3 +425,56 @@ NAVIGATION
         }
     }
 }
+/************************************
+*                                   *
+*           MEDIA QUERY             *
+*                                   *
+*************************************/
+  //MOBILE
+  @media screen and (min-width: 320px) {
+    header {
+      //navToggle
+      .navToggle {
+        display: block;
+      }
+      //mainNav
+      .mainNav {
+        display: none;
+      }
+      .responsive {
+        display: block;
+      }
+    }
+  }
+  
+  //TAB
+  @media screen and (min-width: 768px) {
+    header {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 50% 50%;
+      //navToggle
+      .navToggle {
+        display: none;
+      }
+      //mainNav
+      .mainNav {
+        display: block;
+        position: static;
+        nav ul {
+          display: grid;
+          grid-auto-flow: column;
+          grid-template-columns: 3fr;
+          grid-gap: 40px;
+          margin-right: 3em;
+        li {
+          margin: 0;
+          margin-top: .5em;
+        }
+      }
+      }
+      .responsive {
+        display: block;
+      }
+    }
+  }

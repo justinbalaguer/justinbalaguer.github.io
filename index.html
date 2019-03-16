@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Justin Balaguer | Software Developer</title>
+    <!--BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--MAIN CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--GITHUB CALENDAR / CONTRIBUTION-->
     <!--CREDITS: FOUND ON STACKOVERFLOW https://stackoverflow.com/questions/34516592/embed-github-contributions-graph-in-website-->
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
@@ -20,146 +24,154 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <title>Justin Balaguer | Software Developer</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>  
 </head>
 <body onLoad="loader()">
-    <!--Loader-->
-    <div class="spinner" id="loader">
+<!--Loader-->
+<div class="spinner" id="loader">
         <div class="bounce1"></div>
         <div class="bounce2"></div>
         <div class="bounce3"></div>
       </div>
 <div id="fullContent">
-    <!--Navigation-->
-    <div id="navbar">
-        <div id="logo" class="animate-bottom">
-            <a href="index.html">&lt;justinbalaguer/&gt;</a>
-        </div>
-        <div id="nav" class="animate-bottom">
-            <a href="#home">HOME</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#about">ABOUT</a>
-        </div>
-    </div>
-    <!--01 HOME-->
-    <div class="homeContent" id="home">
-    <div class="container mainContainer">
-    <div class="mainContent animate-bottom">
-        <div class="socialLinks">
-            <a href="https://github.com/justinbalaguer" target="_blank"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
-            <a href="https://www.linkedin.com/in/justinbalaguer/" target="_blank"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
-            <a href="https://www.facebook.com/justinbalaguer.i" target="_blank"><img class="facebook" src="images/icons/facebook.svg" alt="facebook logo"/></a>
-            <img class="lineVertical" src="images/svg/verticalLine.svg" alt="Vertical Line"/>
-            <p>Check it out!</p>
-        </div>
-        <div class="mainLeft animate-bottom">
-            <div class="mainLeftContent">
-            <div>
-                <p class="welcomeText">Hi, I'm Justin</p>
+  <header>
+  <div class="logo">
+    <a href="#">&lt;justinbalaguer/&gt;</a>
+  </div>
+  <div class="navToggle">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+  <div class="mainNav" id="mainNavigation">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--01 HOME-->
+<div class="homeContent" id="home">
+        <div class="container mainContainer">
+        <div class="mainContent animate-bottom">
+            <div class="socialLinks">
+                <a href="https://github.com/justinbalaguer" target="_blank"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
+                <a href="https://www.linkedin.com/in/justinbalaguer/" target="_blank"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
+                <a href="https://www.facebook.com/justinbalaguer.i" target="_blank"><img class="facebook" src="images/icons/facebook.svg" alt="facebook logo"/></a>
+                <img class="lineVertical" src="images/svg/verticalLine.svg" alt="Vertical Line"/>
+                <p>Check it out!</p>
             </div>
-            <div>
-                <p class="welcomeParagraph">Software Developer passionate about learning new technologies and trends.</p>
-            </div>
-            <div>
-                <a href="https://docs.google.com/document/d/1juR1OHDKT_1U8qXRZdbQ57kQi5MzyfuI4_3Qtf_6DoQ/export?format=pdf" target="_blank" class="btn btn-danger"><i class="fa fa-download"></i> Download Resume</a>
-            </div>
-             </div>
-            <div class="animate-bottom">
-                <img src="images/svg/boxIllustraion.svg" alt="Box Illustration">
-            </div>
-        </div>
-        <div class="mainRight animate-bottom">
-            <img class="illustration" src="images/svg/mainIllustration.svg" alt="Main Illustration">
-        </div>
-    </div>
-    </div>
-    </div>
-    <!--ARROW-->
-    <div class="container">
-        <div class="arrowDown">
-            <div class="animate-bottom">
-                <a href="#projects"><img src="images/svg/arrowDown.svg"/></a>
-            </div>
-        </div>
-    </div>
-    <!--02 PROJECTS-->
-    <div id="fullProject">
-    <div class="container" id="projects">
-        <div class="projectWrapper animate-bottom">
-            <div class="projectsTitle">
-                <p>PROJECTS</p>
-            </div>
-            <p class="text-center">List of all the projects I made and uploaded to github to be open source</p>
-            <div id="root">
-                <!--REACT DOM HERE-->
-            </div>
-        </div>
-        <br/>
-        <hr/>
-        <div class="gh-title">
-            <i>Github Contribution</i>
-        </div>
-        <div class="ghSeperate">
-            <div class="ghContribution">
-                <div class="calendar"></div>
-                <script src="js/gh-contribution.js"></script>
-            </div>
-            <div class="projectIllustration">
-                <div class="numberTwoIllustration">
-                    <img src="images/svg/02Illustration.svg"/>
+            <div class="mainLeft animate-bottom">
+                <div class="mainLeftContent">
+                <div>
+                    <p class="welcomeText">Hi, I'm Justin</p>
                 </div>
-                <div class="verticalLine2">
-                        <img src="images/svg/verticalLine2.svg"/>
+                <div>
+                    <p class="welcomeParagraph">Software Developer passionate about learning new technologies and trends.</p>
+                </div>
+                <div>
+                    <a href="https://docs.google.com/document/d/1juR1OHDKT_1U8qXRZdbQ57kQi5MzyfuI4_3Qtf_6DoQ/export?format=pdf" target="_blank" class="btn btn-danger"><i class="fa fa-download"></i> Download Resume</a>
+                </div>
+                 </div>
+                <div class="animate-bottom">
+                    <img src="images/svg/boxIllustraion.svg" alt="Box Illustration">
+                </div>
+            </div>
+            <div class="mainRight animate-bottom">
+                <img class="illustration" src="images/svg/mainIllustration.svg" alt="Main Illustration">
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--ARROW-->
+        <div class="container">
+            <div class="arrowDown">
+                <div class="animate-bottom">
+                    <a href="#projects"><img src="images/svg/arrowDown.svg"/></a>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- Load React component. -->
-     <script type="text/babel" src="app.js"></script>
-    <!--03 ABOUT-->
-    <div id="about">
-        <div class="container about-title">
-            <p class="text-center">ABOUT</p>
-        </div>
-        <div class="container aboutWrapper">
-            <div class="bgAbout">
-                <!--<img src="images/svg/aboutBackground.svg"/>-->
+        <!--02 PROJECTS-->
+        <div id="fullProject">
+        <div class="container" id="projects">
+            <div class="projectWrapper animate-bottom">
+                <div class="projectsTitle">
+                    <p>PROJECTS</p>
+                </div>
+                <p class="text-center">List of all the projects I made and uploaded to github to be open source</p>
+                <div id="root">
+                    <!--REACT DOM HERE-->
+                </div>
             </div>
-            <div class="aboutContent">
-                <div class="aboutLeft">
-                    <div class="aboutTitle">
-                        <p>Justin Balaguer</p>
+            <br/>
+            <hr/>
+            <div class="gh-title">
+                <i>Github Contribution</i>
+            </div>
+            <div class="ghSeperate">
+                <div class="ghContribution">
+                    <div class="calendar"></div>
+                    <script src="js/gh-contribution.js"></script>
+                </div>
+                <div class="projectIllustration">
+                    <div class="numberTwoIllustration">
+                        <img src="images/svg/02Illustration.svg"/>
                     </div>
-                    <div class="aboutGreet">
-                        <p>Hello, my name is Justin Balaguer. I am a Software Developer.</p>
-                    </div>
-                    <div class="aboutLanguages">
-                        <p>C#</p>
-                        <p>HTML5</p>
-                        <p>CSS3/SCSS</p>
-                        <p>JavaScript</p>
-                        <p>PHP</p>
-                    </div>
-                    <div class="aboutUse">
-                        <p>What I Use:</p>
-                        <a href="https://code.visualstudio.com/download" target="_blank"><img src="./images/icons/vscode.svg" alt="vscodeicon"/></a>
-                        <a href="https://visualstudio.microsoft.com/downloads/" target="_blank"><img src="./images/icons/vs.svg" alt="vsicon"/></a>
-                        <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="./images/icons/xd.svg" alt="xdicon"/></a>
-                        <a href="https://www.adobe.com/sea/products/illustrator.html" target="_blank"><img src="./images/icons/ps.svg" alt="psicon"/></a>
-                    </div>
-                    <div class="myEmail">
-                        <p><i class="fa fa-envelope-o"></i><a href="mailto:justinanthony.primary@gmail.com"> justinanthony.primary@gmail.com</a></p>
+                    <div class="verticalLine2">
+                            <img src="images/svg/verticalLine2.svg"/>
                     </div>
                 </div>
-                <div class="aboutRight">
-                    <img src="images/me.png"/>
+            </div>
+        </div>
+        </div>
+        <!-- Load React component. -->
+         <script type="text/babel" src="app.js"></script>
+        <!--03 ABOUT-->
+        <div id="about">
+            <div class="container about-title">
+                <p class="text-center">ABOUT</p>
+            </div>
+            <div class="container aboutWrapper">
+                <div class="bgAbout">
+                    <!--<img src="images/svg/aboutBackground.svg"/>-->
                 </div>
-            </div>        
+                <div class="aboutContent">
+                    <div class="aboutLeft">
+                        <div class="aboutTitle">
+                            <p>Justin Balaguer</p>
+                        </div>
+                        <div class="aboutGreet">
+                            <p>Hello, my name is Justin Balaguer. I am a Software Developer.</p>
+                        </div>
+                        <div class="aboutLanguages">
+                            <p>C#</p>
+                            <p>HTML5</p>
+                            <p>CSS3/SCSS</p>
+                            <p>JavaScript</p>
+                            <p>PHP</p>
+                        </div>
+                        <div class="aboutUse">
+                            <p>What I Use:</p>
+                            <a href="https://code.visualstudio.com/download" target="_blank"><img src="./images/icons/vscode.svg" alt="vscodeicon"/></a>
+                            <a href="https://visualstudio.microsoft.com/downloads/" target="_blank"><img src="./images/icons/vs.svg" alt="vsicon"/></a>
+                            <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="./images/icons/xd.svg" alt="xdicon"/></a>
+                            <a href="https://www.adobe.com/sea/products/illustrator.html" target="_blank"><img src="./images/icons/ps.svg" alt="psicon"/></a>
+                        </div>
+                        <div class="myEmail">
+                            <p><i class="fa fa-envelope-o"></i><a href="mailto:justinanthony.primary@gmail.com"> justinanthony.primary@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="aboutRight">
+                        <img src="images/me.png"/>
+                    </div>
+                </div>        
+            </div>
         </div>
     </div>
-</div>
 <script src="./js/loader.js"></script>
+<script src="./js/nav-toggle.js"></script>
 </body>
 </html>
