@@ -120,7 +120,7 @@ header {
 
 header .logo {
   margin: 0;
-  margin-left: 3em;
+  margin-left: 2em;
   margin-top: .5em;
 }
 
@@ -140,8 +140,8 @@ header .navToggle {
   position: absolute;
   top: 0;
   right: 0;
-  margin-right: 3em;
-  margin-top: .5em;
+  margin-right: 2em;
+  margin-top: 1em;
 }
 
 header .navToggle a {
@@ -169,7 +169,7 @@ header .mainNav nav ul {
 }
 
 header .mainNav nav ul li {
-  margin-right: 3em;
+  margin-right: 2em;
 }
 
 header .mainNav nav ul li a {
@@ -194,7 +194,7 @@ header .mainNav nav ul li a:hover {
 .mainContainer .mainContent {
   display: -ms-grid;
   display: grid;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   background-color: #03030D;
   grid-auto-flow: column;
   -ms-grid-columns: 10% 40% 50%;
@@ -230,15 +230,7 @@ header .mainNav nav ul li a:hover {
 }
 
 .mainContainer .mainContent .socialLinks p {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  grid-auto-flow: row;
-  padding-left: 7px;
+  margin-left: 1px;
   color: #747474;
   font-size: 12px;
   -webkit-writing-mode: vertical-rl;
@@ -529,9 +521,13 @@ header .mainNav nav ul li a:hover {
 *           MEDIA QUERY             *
 *                                   *
 *************************************/
-@media screen and (min-width: 320px) {
+/**
+NAVIGATION MOBILE
+**/
+@media screen and (max-width: 768px) and (min-width: 320px) {
   header .navToggle {
     display: block;
+    padding-top: 2px;
   }
   header .mainNav {
     display: none;
@@ -541,7 +537,104 @@ header .mainNav nav ul li a:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+/**
+HOME CONTENT MOBILE
+**/
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .homeContent {
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .homeContent .mainContainer .mainContent {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row !important;
+    -ms-grid-columns: 100% !important;
+        grid-template-columns: 100% !important;
+    grid-gap: 0px !important;
+  }
+  .homeContent .mainContainer .mainContent .socialLinks {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    grid-auto-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -100px;
+  }
+  .homeContent .mainContainer .mainContent .socialLinks a {
+    margin: 10px;
+  }
+  .homeContent .mainContainer .mainContent .socialLinks a img {
+    width: 30px;
+    height: auto;
+  }
+  .homeContent .mainContainer .mainContent .socialLinks .lineVertical {
+    display: none;
+  }
+  .homeContent .mainContainer .mainContent .socialLinks p {
+    display: none;
+  }
+  .homeContent .mainContainer .mainContent .mainLeft {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: -90px;
+  }
+  .homeContent .mainContainer .mainContent .mainLeft .welcomeParagraph {
+    margin-top: -10px;
+  }
+  .homeContent .mainContainer .mainContent .mainLeft img {
+    margin-top: -100px;
+    display: none;
+  }
+  .homeContent .mainContainer .mainContent .mainRight {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: -50px;
+    padding-bottom: 0px;
+  }
+  .homeContent .mainContainer .mainContent .mainRight img {
+    width: 500px;
+    height: auto;
+  }
+  .arrowDown {
+    z-index: 1000;
+    margin-top: 20px;
+    position: static;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+
+/**
+PROJECT SECTION MOBILE / TABLET
+**/
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  #fullProject #projects .gh-title {
+    display: none;
+  }
+  #fullProject #projects .ghSeperate {
+    display: none;
+  }
+}
+
+/**
+NAVIGATION PC/TAB
+**/
+@media screen and (max-width: 2560px) and (min-width: 769px) {
   header {
     display: -ms-grid;
     display: grid;
@@ -563,7 +656,7 @@ header .mainNav nav ul li a:hover {
     -ms-grid-columns: 3fr;
         grid-template-columns: 3fr;
     grid-gap: 40px;
-    margin-right: 3em;
+    margin-right: 2em;
   }
   header .mainNav nav ul li {
     margin: 0;
@@ -571,6 +664,13 @@ header .mainNav nav ul li a:hover {
   }
   header .responsive {
     display: block;
+  }
+  #fullProject {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #fullProject #projects {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
