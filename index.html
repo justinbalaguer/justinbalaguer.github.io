@@ -49,6 +49,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -168,6 +169,45 @@
                     <img src="images/me.png"/>
                 </div>
             </div>        
+        </div>
+    </div>
+    <!--CONTACT-->
+    <div id="contact" class="mainContact">
+        <div class="container">
+        <div class="container contact-title">
+            <p class="text-center">CONTACT</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+                <form id="contact-form" class="form" action="https://formspree.io/justinanthony.primary@gmail.com" method="POST" role="form">   
+                <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
+                    </div>                            
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2" required>
+                    </div>                            
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <!--<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">-->
+                        <div class="subject-select">
+                            <select name="subject" class="form-control">
+                            <option value="Say Hi!">Say Hi!</option>
+                            <option value="Business">Business</option>
+                            </select>
+                        </div>
+                    </div>                            
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" name="submit" class="btn btn-start-order">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         </div>
     </div>
 </div>
