@@ -177,19 +177,26 @@
         <div class="container contact-title">
             <p class="text-center">CONTACT</p>
         </div>
+        <div id="contactwrapper">
+        <div class="contactFormIllustration">
+            <div class="contactIllustrationHolder">
+                <img src="images/svg/contactIllustration.svg" alt="contact form illustration"/>
+            </div>
+        </div>
+        <div class="contactForm">
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+            <div>
                 <form id="contact-form" class="form" action="https://formspree.io/justinanthony.primary@gmail.com" method="POST" role="form"> 
                 <div class="form-group">
                         <input type="text" name="_gotcha" style="display:none" />
                 </div>  
                 <div class="form-group">
                         <label class="form-label" for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." tabindex="1" required>
                     </div>                            
                     <div class="form-group">
                         <label class="form-label" for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="Email" tabindex="2" required>
+                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email..." tabindex="2" required>
                     </div>                            
                     <div class="form-group">
                         <label class="form-label" for="subject">Subject</label>
@@ -202,13 +209,15 @@
                     </div>                            
                     <div class="form-group">
                         <label class="form-label" for="message">Message</label>
-                        <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message" tabindex="4" required></textarea>                                 
+                        <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="..." tabindex="4" required></textarea>                                 
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-start-order">Send Message</button>
                     </div>
                 </form>
             </div>
+        </div>
+        </div>
         </div>
         </div>
     </div>
