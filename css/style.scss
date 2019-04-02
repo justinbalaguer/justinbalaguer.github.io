@@ -417,9 +417,9 @@ header {
 }
 .btn-start-order {
 	background: 0 0 #ffffff;
-    border: 1px solid #2f323a;
+    border: 1px solid $fontFaded;
     border-radius: 3px;
-    color: #2f323a;
+    color: $fontFaded;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: inherit;
@@ -431,6 +431,76 @@ header {
 .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
 	border-color: #5e9bfc;
 	color: #5e9bfc;
+}
+
+/*
+FOOTER
+*/
+footer {
+    width: 100%;
+    background-color: $bg;
+    padding-bottom: 30px;
+    .footerwrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 4f;
+        grid-gap: 20px;
+        padding-top: 30px;
+        a {
+            color: $colorHover;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        p {
+            color: $colorHover;
+            font-size: 14px;
+        }
+        b {
+            font-size: 24px;
+            color: $colorMainWhite;
+        }
+        span {
+            color: $colorHover;
+            font-size: 14px;
+        }
+        .footerlogo {
+            display: grid;
+            grid-auto-flow: row;
+            a {
+                color: $colorMainWhite;
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            h5 {
+                margin-top: -45px;
+                font-size: 12px;
+                color: $fontSecondray;
+                padding-left: 15px;
+            }
+        }
+        .footernavigate {
+            display: grid;
+            grid-auto-flow: row;
+            a {
+                margin-top: -25px;
+            }
+        }
+        .footersocial {
+            display: grid;
+            grid-auto-flow: row;
+            a {
+                padding-bottom: 5px;
+            }
+        }
+        .footerlocation {
+            display: grid;
+            grid-auto-flow: row;
+            span {
+                margin-top: -25px;
+            }
+        }
+    }
 }
 
 /************************************
@@ -620,6 +690,49 @@ CONTACT SECTION MOBILE / TABLET
                 justify-content: center;
                 padding-left: 20px;
                 padding-right: 20px;
+            }
+        }
+    }
+}
+
+/**
+FOOTER SECTION MOBILE / TABLET
+**/
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    footer {
+        .footerwrapper {
+            position: static;
+            width: 100%;
+            display: grid;
+            grid-auto-flow: row !important;
+            grid-template-columns: 100% !important;
+            .footerlogo {
+                justify-content: center;
+                text-align: center;
+                h5 {
+                    margin-top: 0px;
+                }
+            }
+            .footernavigate {
+                justify-content: center;
+                text-align: center;
+                a {
+                    margin-top: 0px;
+                }
+            }
+            .footersocial {
+                justify-content: center;
+                text-align: center;
+                a {
+                    margin-top: 0px;
+                } 
+            }
+            .footerlocation {
+                justify-content: center;
+                text-align: center;
+                span {
+                    margin-top: 0px;
+                }
             }
         }
     }
