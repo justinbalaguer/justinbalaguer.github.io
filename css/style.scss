@@ -350,7 +350,7 @@ header {
 #contact {
     width: 100%;
     background-color: #fff;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     .contact-title {
         padding: 40px;
         p {
@@ -445,27 +445,26 @@ footer {
         grid-auto-flow: column;
         grid-template-columns: 4f;
         grid-gap: 20px;
-        padding-top: 30px;
+        padding-top: 40px;
         a {
             color: $colorHover;
             text-decoration: underline;
-            font-size: 14px;
+            font-size: 13px;
         }
         p {
             color: $colorHover;
-            font-size: 14px;
+            font-size: 13px;
         }
         b {
-            font-size: 24px;
+            font-size: 18px;
             color: $colorMainWhite;
         }
         span {
             color: $colorHover;
-            font-size: 14px;
+            font-size: 13px;
         }
         .footerlogo {
             display: grid;
-            grid-auto-flow: row;
             a {
                 color: $colorMainWhite;
                 font-size: 24px;
@@ -480,22 +479,16 @@ footer {
             }
         }
         .footernavigate {
-            display: grid;
-            grid-auto-flow: row;
             a {
                 margin-top: -25px;
             }
         }
         .footersocial {
-            display: grid;
-            grid-auto-flow: row;
             a {
                 padding-bottom: 5px;
             }
         }
         .footerlocation {
-            display: grid;
-            grid-auto-flow: row;
             span {
                 margin-top: -25px;
             }
@@ -672,6 +665,7 @@ CONTACT SECTION MOBILE / TABLET
             grid-auto-flow: row !important;
             grid-template-columns: 100% !important;
             grid-gap: 0px !important;
+            margin-bottom: -80px;
             .contactFormIllustration {
                 order: 1;
                 justify-content: center;

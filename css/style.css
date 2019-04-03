@@ -426,7 +426,7 @@ header .mainNav nav ul li a:hover {
 #contact {
   width: 100%;
   background-color: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 #contact .contact-title {
@@ -551,34 +551,33 @@ footer .footerwrapper {
   -ms-grid-columns: 4f;
       grid-template-columns: 4f;
   grid-gap: 20px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 footer .footerwrapper a {
   color: #ADAFBC;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 footer .footerwrapper p {
   color: #ADAFBC;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 footer .footerwrapper b {
-  font-size: 24px;
+  font-size: 18px;
   color: #FFF;
 }
 
 footer .footerwrapper span {
   color: #ADAFBC;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 footer .footerwrapper .footerlogo {
   display: -ms-grid;
   display: grid;
-  grid-auto-flow: row;
 }
 
 footer .footerwrapper .footerlogo a {
@@ -595,30 +594,12 @@ footer .footerwrapper .footerlogo h5 {
   padding-left: 15px;
 }
 
-footer .footerwrapper .footernavigate {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-}
-
 footer .footerwrapper .footernavigate a {
   margin-top: -25px;
 }
 
-footer .footerwrapper .footersocial {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-}
-
 footer .footerwrapper .footersocial a {
   padding-bottom: 5px;
-}
-
-footer .footerwrapper .footerlocation {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
 }
 
 footer .footerwrapper .footerlocation span {
@@ -808,6 +789,7 @@ CONTACT SECTION MOBILE / TABLET
     -ms-grid-columns: 100% !important;
         grid-template-columns: 100% !important;
     grid-gap: 0px !important;
+    margin-bottom: -80px;
   }
   #contact #contactwrapper .contactFormIllustration {
     -webkit-box-ordinal-group: 2;
