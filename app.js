@@ -76,36 +76,36 @@ class App extends React.Component {
                         <td className='text-center'>{this.state.phnewsName}</td>
                         <td>{this.state.phnewsDescription}</td>
                         <td className='text-center'>{this.state.phnewsLanguage}</td>
-                        <td className='text-center'><a href={this.state.phnewsHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
-                        <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">Demo</a></td>
+                        <td className='text-center'><a href={this.state.phnewsHtml_Url} rel="noopener noreferrer" target="_blank">Repo</a></td>
+                        <td className='text-center'><a href="https://justinbalaguer.github.io/ph-news" rel="noopener noreferrer" target="_blank">View</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.ghostName}</td>
                         <td>{this.state.ghostDescription}</td>
                         <td className='text-center'>{this.state.ghostLanguage}</td>
-                        <td className='text-center'><a href={this.state.ghostHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
-                        <td className='text-center'><a href="https://www.dropbox.com/s/ahg2i16i1t46jv0/Ghost%20File%20v1.0%20BETA.exe?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
+                        <td className='text-center'><a href={this.state.ghostHtml_Url} rel="noopener noreferrer" target="_blank">Repo</a></td>
+                        <td className='text-center'><a href="https://www.dropbox.com/s/ahg2i16i1t46jv0/Ghost%20File%20v1.0%20BETA.exe?dl=0" rel="noopener noreferrer" target="_blank">View</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.evadeName}</td>
                         <td>{this.state.evadeDescription}</td>
                         <td className='text-center'>{this.state.evadeLanguage}</td>
-                        <td className='text-center'><a href={this.state.evadeHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
-                        <td className='text-center'><a href="https://www.dropbox.com/s/2f2403neqnbjwvy/Evade.apk?dl=0" rel="noopener noreferrer" target="_blank">Demo</a></td>
+                        <td className='text-center'><a href={this.state.evadeHtml_Url} rel="noopener noreferrer" target="_blank">Repo</a></td>
+                        <td className='text-center'><a href="https://www.dropbox.com/s/2f2403neqnbjwvy/Evade.apk?dl=0" rel="noopener noreferrer" target="_blank">View</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.repoName}</td>
                         <td>{this.state.repoDescription}</td>
                         <td className='text-center'>{this.state.repoLanguage}</td>
-                        <td className='text-center'><a href={this.state.repoHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
-                        <td className='text-center'><a href="https://justinbalaguer.github.io/github-repo-fetch" rel="noopener noreferrer" target="_blank">Demo</a></td>
+                        <td className='text-center'><a href={this.state.repoHtml_Url} rel="noopener noreferrer" target="_blank">Repo</a></td>
+                        <td className='text-center'><a href="https://justinbalaguer.github.io/github-repo-fetch" rel="noopener noreferrer" target="_blank">View</a></td>
                     </tr>
                     <tr>
                         <td className='text-center'>{this.state.arduinorelayName}</td>
                         <td>{this.state.arduinorelayDescription}</td>
                         <td className='text-center'>{this.state.arduinorelayLanguage}</td>
-                        <td className='text-center'><a href={this.state.arduinorelayHtml_Url} rel="noopener noreferrer" target="_blank">view</a></td>
-                        <td className='text-center'><a href="https://github.com/justinbalaguer/arduino-bluetooth-relay" rel="noopener noreferrer" target="_blank">Demo</a></td>
+                        <td className='text-center'><a href={this.state.arduinorelayHtml_Url} rel="noopener noreferrer" target="_blank">Repo</a></td>
+                        <td className='text-center'><a href="https://github.com/justinbalaguer/arduino-bluetooth-relay" rel="noopener noreferrer" target="_blank">View</a></td>
                     </tr>
                     </tbody>
                 </table>
