@@ -614,7 +614,7 @@ SCROLL TO TOP
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+  bottom: 0px;
   /* Place the button at the bottom of the page */
   right: 30px;
   /* Place the button 30px from the right */
@@ -630,19 +630,19 @@ SCROLL TO TOP
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 8px 10px;
+  padding: 5px 15px;
   /* Some padding */
   border-radius: 2px;
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 #myBtn:hover {
   background-color: #181818;
   /* Add a dark-grey background on hover */
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /************************************
