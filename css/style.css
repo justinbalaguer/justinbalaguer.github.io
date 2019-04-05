@@ -640,9 +640,9 @@ SCROLL TO TOP
 }
 
 #myBtn:hover {
-  background-color: #181818;
+  background-color: #DC3545;
   /* Add a dark-grey background on hover */
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 /************************************
