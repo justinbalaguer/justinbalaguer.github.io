@@ -501,24 +501,24 @@ footer {
 SCROLL TO TOP
 **/
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 0px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: $darkGray; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 5px 15px; /* Some padding */
-    border-radius: 2px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $darkGray;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 2px;
+    font-size: 18px;
     opacity: 0.8;
   }
   
   #myBtn:hover {
-    background-color: $red; /* Add a dark-grey background on hover */
+    background-color: $red;
     opacity: 0.9;
 }
 
