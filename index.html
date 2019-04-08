@@ -6,6 +6,7 @@
     <meta name="Description" content="Justin Balaguer Personal Webiste / Portfolio">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Justin Balaguer | Software Developer</title>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <!--BOOTSTRAP-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -53,14 +54,14 @@
     <div class="homeContent" id="home">
         <div class="container mainContainer">
         <div class="mainContent">
-            <div class="socialLinks">
+            <div class="socialLinks" data-aos="fade" data-aos-delay="200">
                 <a href="https://github.com/justinbalaguer" target="_blank" rel="noreferrer"><img class="github" src="images/icons/github.svg" alt="github logo"/></a>
                 <a href="https://www.linkedin.com/in/justinbalaguer/" target="_blank" rel="noreferrer"><img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin logo"/></a>
                 <a href="https://www.facebook.com/justinbalaguer.i" target="_blank" rel="noreferrer"><img class="facebook" src="images/icons/facebook.svg" alt="facebook logo"/></a>
                 <img class="lineVertical" src="images/svg/verticalLine.svg" alt="Vertical Line"/>
                 <p>Check it out!</p>
             </div>
-            <div class="mainLeft">
+            <div class="mainLeft" data-aos="fade">
                 <div class="mainLeftContent">
                 <div>
                     <p class="welcomeText">Hi, I'm Justin</p>
@@ -76,7 +77,7 @@
                     <img src="images/svg/boxIllustraion.svg" alt="Box Illustration">
                 </div>
             </div>
-            <div class="mainRight">
+            <div class="mainRight" data-aos="fade-up">
                 <img class="illustration" src="images/svg/mainIllustration.svg" alt="Main Illustration">
             </div>
         </div>
@@ -136,7 +137,7 @@
                 <!--<img src="images/svg/aboutBackground.svg"/>-->
             </div>
             <div class="aboutContent">
-                <div class="aboutLeft">
+                <div class="aboutLeft" data-aos="fade" data-aos-anchor-placement="top-center">
                     <div class="aboutTitle">
                         <p>Justin Balaguer</p>
                     </div>
@@ -161,7 +162,7 @@
                         <p><i class="fa fa-envelope-o"></i><a href="mailto:justinanthony.primary@gmail.com" rel="noreferrer"> justinanthony.primary@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="aboutRight">
+                <div class="aboutRight" data-aos="fade-up">
                     <img src="images/me.png"/>
                 </div>
             </div>        
@@ -174,7 +175,7 @@
             <p class="text-center">CONTACT</p>
         </div>
         <div id="contactwrapper">
-        <div class="contactFormIllustration">
+        <div class="contactFormIllustration" data-aos="fade">
             <div class="contactIllustrationHolder">
                 <img src="images/svg/contactIllustration.svg" alt="contact form illustration"/>
             </div>
@@ -249,5 +250,14 @@
 </footer>
 <script src="./js/scroll-to-top.js"></script>
 <script src="./js/nav-toggle.js"></script>
+<script src="node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+    offset: 200,
+    duration: 800,
+    easing: 'ease-in-sine',
+    delay: 100,
+    });
+</script>
 </body>
 </html>
