@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git and Github Guide</title>
+    <!--BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container navbar-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">GIT & GITHUB GUIDE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://git-scm.com/downloads" target="_blank">Download Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#setup">Terminal Setup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upload">Upload Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clone">Clone Project</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <main>
+            <h2 class='text-center' id='setup'>SETUP</h2>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5>Step 1. Create GitHub account</h5>
+                            <ul>
+                                <li>
+                                    <p>Create your <a href="https://github.com/join" target="_blank">GitHub</a>
+                                        account.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 2. Download Git</h5>
+                            <p>Download Git for <a href="https://git-scm.com/downloads" target="_blank">Windows</a> , <a
+                                    href="https://git-scm.com/downloads" target="_blank">Mac</a> , <a
+                                    href="https://git-scm.com/downloads" target="_blank">
+                                    Linux</a></p>
+                            <ul>
+                                <li>Install Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 3. Setup your terminal</h5>
+                            <ul>
+                                <li>
+                                    <p>Open <code>Git Bash</code> or any other terminal and setup git with your GitHub
+                                        username
+                                        and
+                                        email.</p>
+                                </li>
+                                <li>
+                                    <pre class='bg-light p-3'>
+<code>$ git config --global user.name "Your username"
+$ git config --global user.email "your_email@example.com"</code>
+                                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="../images/svg/git-basics-1.svg" style="width:100%;height:auto;" alt="version control">
+                </div>
+            </div>
+            <hr>
+            <!-- Next -->
+            <h2 class='text-center' id='upload'>UPLOADING PROJECTS TO GITHUB</h2>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-sm-6">
+                    <img src="../images/svg/git-basics-2.svg" style="width:100%;height:auto;" alt="github">
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 1. Create a Repository</h5>
+                            <ul>
+                                <li>Create your <a href="https://github.com/new" target="_blank">Repository</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 2. Open Terminal</h5>
+                            <ul>
+                                <li>Go to your <code>Git Bash</code> or any other terminal.</li>
+                                <li>Change directory to your projects folder.
+                                    <pre class='bg-light p-3'>
+<code>$ cd ../../xampp/htdocs/&lt;project_folder&gt;</code>
+                                    </pre>
+                                </li>
+                                <li>Initialize Git & add the remote/origin
+                                    <pre class='bg-light p-3'>
+<code>$ git init</code>
+<code>$ git remote add origin https://github.com/&lt;your_username&gt;/&lt;your_repository&gt;.git</code>
+                                    </pre>
+                                </li>
+                                <li>Commit and push project to your repository.
+                                    <pre class='bg-light p-3'>
+<code>$ git add .</code>
+<code>$ git commit -m "&lt;your_commit_message&gt;"</code>
+<code>$ git push -u origin master</code>
+                                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row text-center" style="font-size: 13px;">
+                <div class="col-sm-12">
+                    <p><b>NOTE:</b> you can now go to your <code>GitHub Repository</code> and reload to see if your
+                        project has
+                        been uploaded/imported.</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Next -->
+            <h2 class='text-center' id='clone'>CLONING PROJECTS FROM GITHUB</h2>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 1. Get Remote Url</h5>
+                            <ul>
+                                <li>
+                                    <p>Go to the Repository and copy the URL from <code>Clone or download</code> button.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 2. Open Terminal</h5>
+                            <ul>
+                                <li>Change directory to your desired folder.</li>
+                                <li>Clone the repository
+                                    <pre class='bg-light p-3'>
+<code>$ git clone https://github.com/&lt;your_name&gt;/&lt;repository_name&gt;.git</code>
+                                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5>Step 3. Modify Project & push changes</h5>
+                            <ul>
+                                <li>You can now modify/edit the project you cloned.</li>
+                                <li>Pull from repository to check for changes
+                                    <pre class='bg-light p-3'>
+<code>$ git pull origin master</code>
+                                    </pre>
+                                </li>
+                                <li>Stage, commit and push the changes you made
+                                    <pre class='bg-light p-3'>
+<code>$ git add .</code>
+<code>$ git commit "&lt;your_commit_message&gt;"</code>
+<code>$ git push -u origin master</code>
+                                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="../images/svg/git-basics-3.svg" style="width:100%;height:auto;" alt="code">
+                </div>
+            </div>
+            <div class="row text-center" style="font-size: 13px;">
+                <div class="col-sm-12">
+                    <p><b>NOTE:</b> you can now go to your <code>GitHub Repository</code> and reload to see if your
+                        changes has been updated/pushed.</p>
+                    <p>Also note that this cloning guide is for repositories you have Push Permission</p>
+                    <p style="font-size:16px;">If you don't have push permission, you can read about <a
+                            href="https://www.git-scm.com/docs" target="_target"><code>Forking,
+                                Branching, Squashing
+                                commits etc.</code></a> and use <a href="https://www.git-scm.com/docs"
+                            target="_target"><code>Pull
+                                Requests</code></a> for the changes you made.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../js/smoothScroll.js"></script>
+
+</html>
