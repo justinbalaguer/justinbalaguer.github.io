@@ -121,10 +121,13 @@ $ git config --global user.email "your_email@example.com"</code>
 <code>$ cd ../../xampp/htdocs/&lt;project_folder&gt;</code>
                                     </pre>
                                 </li>
-                                <li>Initialize Git & add the remote/origin
+                                <li>Initialize Git & add the remote/origin <span style="font-size:12px;">(<b>note:</b>
+                                        use the <code>git
+                                            pull</code> command if you added a Readme.md or any file from github)</span>
                                     <pre class='bg-light p-3'>
 <code>$ git init</code>
 <code>$ git remote add origin https://github.com/&lt;your_username&gt;/&lt;your_repository&gt;.git</code>
+<code>$ git pull origin master</code>
                                     </pre>
                                 </li>
                                 <li>Commit and push project to your repository.
@@ -171,7 +174,7 @@ $ git config --global user.email "your_email@example.com"</code>
                                 <li>Change directory to your desired folder.</li>
                                 <li>Clone the repository
                                     <pre class='bg-light p-3'>
-<code>$ git clone https://github.com/&lt;your_name&gt;/&lt;repository_name&gt;.git</code>
+<code>$ git clone https://github.com/&lt;your_username&gt;/&lt;repository_name&gt;.git</code>
                                     </pre>
                                 </li>
                             </ul>
