@@ -1,7 +1,9 @@
 /* Import FONT*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /* RESET */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -9,89 +11,29 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #03030D;
+  background-color: #03030d;
 }
 
-/* NAVIGATION */
-header {
-  background-color: #03030D;
+nav {
+  overflow: hidden;
+  background-color: #23232e;
   position: fixed;
+  bottom: 0;
   width: 100%;
-  z-index: 5;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  z-index: 999999;
 }
 
-header .logo {
-  margin: 0;
-  margin-left: 2em;
-  margin-top: .5em;
-}
-
-header .logo a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #FFF;
-}
-
-header .logo a:hover {
-  color: #ADAFBC;
-}
-
-header .navToggle {
-  display: none;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 2em;
-  margin-top: 1em;
-}
-
-header .navToggle a {
-  color: #FFF;
-}
-
-header .navToggle a:hover {
-  color: #ADAFBC;
-}
-
-header .mainNav {
-  display: none;
-  position: absolute;
-  text-align: right;
-  top: 100%;
-  right: 0;
-  background-color: #03030D;
-  width: 100%;
-}
-
-header .mainNav nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-header .mainNav nav ul li {
-  margin-right: 2em;
-}
-
-header .mainNav nav ul li a {
-  font-size: 14px;
-  color: #FFF;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-header .mainNav nav ul li a:hover {
-  color: #ADAFBC;
+.btn-hdn {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 /*
 01 HOME
 */
 .homeContent {
-  background-color: #03030D;
+  background-color: #03030d;
   padding-top: 80px;
 }
 
@@ -99,7 +41,7 @@ header .mainNav nav ul li a:hover {
   display: -ms-grid;
   display: grid;
   padding-bottom: 0px;
-  background-color: #03030D;
+  background-color: #03030d;
   grid-auto-flow: column;
   -ms-grid-columns: 10% 40% 50%;
       grid-template-columns: 10% 40% 50%;
@@ -120,9 +62,9 @@ header .mainNav nav ul li a:hover {
 }
 
 .mainContainer .mainContent .socialLinks a:hover {
-  -webkit-transition: .2s;
+  -webkit-transition: 0.2s;
   /* Safari */
-  transition: .2s;
+  transition: 0.2s;
   /* IE 9 */
   -webkit-transform: rotate(20deg);
   /* Safari 3-8 */
@@ -171,8 +113,8 @@ header .mainNav nav ul li a:hover {
 
 .mainContainer .mainContent .mainLeft .mainLeftContent .welcomeText {
   font-size: 50px;
-  color: #EFEFEF;
-  font-family: 'Montserrat';
+  color: #efefef;
+  font-family: "Montserrat";
   font-weight: 900;
 }
 
@@ -207,9 +149,9 @@ header .mainNav nav ul li a:hover {
 
 .arrowDown img:hover {
   cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
   /* Safari */
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   /* IE 9 */
   -webkit-transform: scale(1.2, 1.2);
   /* Safari 3-8 */
@@ -308,10 +250,10 @@ header .mainNav nav ul li a:hover {
 03 ABOUT
 */
 #about {
-  background-color: #03030D;
+  background-color: #03030d;
   min-height: 700px;
   background: url("../images/svg/aboutBackground.svg") no-repeat;
-  background-color: #03030D;
+  background-color: #03030d;
   background-position: center;
   background-position-y: 150px;
 }
@@ -321,7 +263,7 @@ header .mainNav nav ul li a:hover {
 }
 
 #about .about-title p {
-  color: #EFEFEF;
+  color: #efefef;
   font-size: 40px;
   font-weight: 100;
 }
@@ -354,8 +296,8 @@ header .mainNav nav ul li a:hover {
 
 #about .aboutContent .aboutLeft .aboutTitle p {
   font-size: 50px;
-  color: #EFEFEF;
-  font-family: 'Montserrat';
+  color: #efefef;
+  font-family: "Montserrat";
   font-weight: 900;
 }
 
@@ -385,9 +327,9 @@ header .mainNav nav ul li a:hover {
 }
 
 #about .aboutContent .aboutLeft .aboutUse img:hover {
-  -webkit-transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
   /* Safari */
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   /* IE 9 */
   -webkit-transform: scale(1.1, 1.1);
   /* Safari 3-8 */
@@ -488,8 +430,8 @@ textarea {
   margin: 0;
   display: block;
   opacity: 1;
-  -webkit-transition: .333s ease top, .333s ease opacity;
-  transition: .333s ease top, .333s ease opacity;
+  -webkit-transition: 0.333s ease top, 0.333s ease opacity;
+  transition: 0.333s ease top, 0.333s ease opacity;
 }
 
 .form-control {
@@ -530,7 +472,9 @@ textarea {
   transition: all 0.25s ease 0s;
 }
 
-.btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
+.btn-start-order:hover,
+.btn-start-order:active,
+.btn-start-order:focus {
   border-color: #5e9bfc;
   color: #5e9bfc;
 }
@@ -540,8 +484,9 @@ FOOTER
 */
 footer {
   width: 100%;
-  background-color: #03030D;
+  background-color: #03030d;
   padding-bottom: 30px;
+  height: 40vh;
 }
 
 footer .footerwrapper {
@@ -555,23 +500,23 @@ footer .footerwrapper {
 }
 
 footer .footerwrapper a {
-  color: #ADAFBC;
+  color: #adafbc;
   text-decoration: underline;
   font-size: 13px;
 }
 
 footer .footerwrapper p {
-  color: #ADAFBC;
+  color: #adafbc;
   font-size: 13px;
 }
 
 footer .footerwrapper b {
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
 }
 
 footer .footerwrapper span {
-  color: #ADAFBC;
+  color: #adafbc;
   font-size: 13px;
 }
 
@@ -581,7 +526,7 @@ footer .footerwrapper .footerlogo {
 }
 
 footer .footerwrapper .footerlogo a {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -627,7 +572,7 @@ SCROLL TO TOP
 }
 
 #myBtn:hover {
-  background-color: #DC3545;
+  background-color: #dc3545;
   opacity: 0.9;
 }
 
@@ -925,7 +870,7 @@ NAVIGATION PC/TAB
   }
   header .mainNav nav ul li {
     margin: 0;
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
   header .responsive {
     display: block;
@@ -937,5 +882,27 @@ NAVIGATION PC/TAB
   #fullProject #projects {
     width: 100%;
   }
+}
+
+/* 2020 */
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 /*# sourceMappingURL=style.css.map */
