@@ -41,7 +41,7 @@ const help = () => {
   document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       let lastIndex = document.getElementsByTagName('input').length;
-      let cmd = document.getElementsByTagName('input')[lastIndex - 1].value;
+      let cmd = document.getElementsByTagName('input')[lastIndex - 1].value.toLowerCase();
       vals.push(cmd);
       setTimeout(() => {
         for(let i = 0; i < vals.length; i++) {

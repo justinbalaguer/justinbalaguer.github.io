@@ -28,6 +28,7 @@ body {
   outline: none;
   font-size: 14px;
   width: 100%;
+  text-transform: lowercase;
 }
 
 .line {
