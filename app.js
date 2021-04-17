@@ -91,6 +91,7 @@ const help = () => {
           <p>Name: Justin Balaguer</p>
           <p>Address: Legazpi City, PH</p>
           <p>Email: <a class='white' href='mailto:justinanthony.primary@gmail.com'>justinanthony.primary@gmail.com</a></p>
+          <p>Portfolio: <a class='white' href='https://justinbalaguer.vercel.app/'>https://justinbalaguer.vercel.app</a></p>
           <p>GitHub: <a class='white' href='https://github.com/justinbalaguer' target='_blank'>https://github.com/justinbalaguer</a></p>
           <p>LinkedIn: <a class='white' href='https://www.linkedin.com/in/justinbalaguer/' target='_blank'>https://www.linkedin.com/in/justinbalaguer/</a></p>
         </div>
