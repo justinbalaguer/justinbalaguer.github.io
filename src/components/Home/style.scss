@@ -1,0 +1,43 @@
+#home {
+  article {
+    h5 {
+      margin: 0;
+    }
+    hgroup {
+      margin: 0;
+    }
+  }
+  
+  #emoji {
+    display: inline-block !important;
+    transform-origin: 100% 100%;
+
+    @mixin animate($animation,$duration,$method,$times){
+        animation: $animation $duration $method $times;
+    }
+    
+    @mixin keyframes($name){
+        @keyframes #{$name}{
+            @content;
+        }
+    }
+
+    @include keyframes(rocking){
+      0%{
+        transform: rotate(15deg);
+      } 50% {
+        transform: rotate(0deg);
+      } 100% {
+        transform: rotate(15deg);
+      }
+    }
+
+    @include animate(rocking, 1.5s, linear, infinite);
+  }
+
+  .crypto-section {
+    hgroup {
+      overflow-wrap: break-word;
+    }
+  }
+}
