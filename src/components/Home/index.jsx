@@ -14,13 +14,10 @@ const Home = () => {
       <article>
         <h5>Contact 📧</h5>
         <div>
-          <a href='mailto:hello@justinbalaguer.dev'>hello@justinbalaguer.dev</a>
+          <a href='mailto:hello@justinbalaguer.dev'>justinbalaguer@pm.me</a>
         </div>
         <div>
           <a href='https://matrix.to/#/@ojintoji:matrix.org' target='_blank' rel='noreferrer'>@ojintoji:matrix.org</a>
-        </div>
-        <div>
-          <p>Session: 0519f44765b28d74c29cf5bdf0a55493cfc760c4b6aa3073beda6cd2024058a548</p>
         </div>
       </article>
       <article>
