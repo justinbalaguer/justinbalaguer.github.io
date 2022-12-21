@@ -14,7 +14,7 @@ const Home = () => {
       <article>
         <h5>Contact 📧</h5>
         <div>
-          <a href='mailto:hello@justinbalaguer.dev'>justinbalaguer@pm.me</a>
+          <a href='mailto:justinbalaguer@pm.me'>justinbalaguer@pm.me</a>
         </div>
         <div>
           <a href='https://matrix.to/#/@ojintoji:matrix.org' target='_blank' rel='noreferrer'>@ojintoji:matrix.org</a>
